@@ -1,9 +1,9 @@
 ```mermaid
 graph TD
     A[Lift & Shift Process] --> B[Check Prerequisites]
-    B --> B1[Source system must be\non supported release]
+    B --> B1[Source system must be on supported release]
     B --> C[Provision Target System]
-    C --> C1[Provision new hardware\nin new landscape]
+    C --> C1[Provision new hardware in new landscape]
     C --> D[Backup & Restore]
     D --> D1[Use Software Provisioning Manager]
     D --> D2[Backup current system]
