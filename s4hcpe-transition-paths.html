@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP S/4HANA Transition Paths - Mermaid Diagrams</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2b579a;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2b579a;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        .diagram-section {
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 2px dashed #ccc;
+        }
+        .mermaid {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+            min-height: 200px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SAP S/4HANA Cloud Private Edition Transition Paths</h1>
+        
+        <div class="diagram-section">
+            <h2>1. Transition Paths Overview</h2>
+            <div class="mermaid">
+flowchart TD
+    A[Transition Paths to SAP S/4HANA\nCloud Private Edition] --> B[New Implementation\n50% of projects]
+    A --> C[System Conversion\n48% of projects]
+    A --> D[Selective Data Transition\n2% of projects]
+    A --> E[Lift & Shift]
+    
+    B --> B1[Brand new installation\nGreenfield approach]
+    B --> B2[Semi-Greenfield for\ninstalled-base customers]
+    
+    C --> C1[1:1 conversion of existing\nSAP ERP system]
+    C --> C2[Example: SAP ECC to\nSAP S/4HANA Cloud Private Edition]
+    
+    D --> D1[Selectively migrate and\ntransform configuration,\nmaster & transaction data]
+    D --> D2[Mix of new implementation\n& system conversion]
+    
+    E --> E1[Move entire system without\nchange to new landscape]
+    E --> E2[Example: SAP S/4HANA on-premise\nto Cloud Private Edition]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333
+    style C fill:#bbf,stroke:#333
+    style D fill:#bbf,stroke:#333
+    style E fill:#bbf,stroke:#333
+            </div>
+        </div>
+        
+        <div class="diagram-section">
+            <h2>2. Decision Factors for Choosing Transition Path</h2>
+            <div class="mermaid">
+mindmap
+  root((Transition Path\nDecision Factors))
+    Business Considerations
+      Corporate strategy
+      Degree of planned business transformation
+    Technical Factors
+      Existing landscape
+      Need to retain historical data
+    Organizational Readiness
+      Level of sponsorship
+      Higher sponsorship → More likely new implementation
+            </div>
+        </div>
+        
+        <div class="diagram-section">
+            <h2>3. New Implementation Process</h2>
+            <div class="mermaid">
+graph TD
+    A[New Implementation Process] --> B[Software Installation]
+    B --> C[Pre-Configuration Content Activation]
+    C --> C1[SAP Best Practices]
+    C --> C2[Enterprise Management Layer]
+    C --> C3[SAP Qualified Partner\nPackaged Solutions]
+    C1 --> D[Software Configuration]
+    C2 --> D
+    C3 --> D
+    D --> E[Initial Data Load]
+    E --> E1[Master Data Migration]
+    E --> E2[Open Items Migration]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333
+    style C fill:#bbf,stroke:#333
+    style D fill:#bbf,stroke:#333
+    style E fill:#bbf,stroke:#333
+            </div>
+        </div>
+        
+        <div class="diagram-section">
+            <h2>4. System Conversion Process</h2>
+            <div class="mermaid">
+graph TD
+    A[System Conversion Process] --> B[Prepare ERP System]
+    B --> B1[Clean up custom code]
+    B --> B2[Reduce data volumes]
+    B --> C[Database Migration]
+    C --> D[System Update]
+    D --> E[Data Conversion]
+    E --> F[Software Configuration]
+    F --> F1[Implement mandatory items]
+    F --> F2[Implement simplification items]
+    F --> F3[Reuse original business processes]
+    
+    G[Software Update Manager\nSUM] --> C
+    G --> D
+    G --> E
+    
+    H[Database Migration Option\nDMO] --> H1[Combines database migration,\nsystem update & data conversion]
+    H1 --> H2[Reduces complexity, downtime,\ntransition time, and costs]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333
+    style C fill:#bbf,stroke:#333
+    style D fill:#bbf,stroke:#333
+    style E fill:#bbf,stroke:#333
+    style F fill:#bbf,stroke:#333
+    style G fill:#ffb,stroke:#333
+    style H fill:#ffb,stroke:#333
+            </div>
+        </div>
+        
+        <div class="diagram-section">
+            <h2>5. Selective Data Transition Process</h2>
+            <div class="mermaid">
+graph TD
+    A[Selective Data Transition] --> B[Data Selection Options]
+    B --> B1[ABAP repository objects]
+    B --> B2[Configuration data]
+    B --> B3[Master data]
+    B --> B4[Transaction data]
+    
+    A --> C[Common Approaches]
+    C --> D[Shell Conversion]
+    C --> E[Mix & Match]
+    
+    D --> D1[Shell copy of production\nsystem without data]
+    D --> D2[Convert shell to S/4HANA]
+    D --> D3[Best for mostly\nreused processes]
+    
+    E --> E1[New S/4HANA installation]
+    E --> E2[Transfer elements of existing\nconfiguration and ABAP repository]
+    E --> E3[Best if majority of solution\nis being redesigned]
+    
+    A --> F[Partner Considerations]
+    F --> F1[Partners use their own tools]
+    F --> F2[SAP does not certify 3rd party tools]
+    F --> F3[Issues from non-SAP tools not\ncovered by SAP Support]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333
+    style C fill:#bbf,stroke:#333
+    style D fill:#bbf,stroke:#333
+    style E fill:#bbf,stroke:#333
+    style F fill:#ffb,stroke:#333
+            </div>
+        </div>
+        
+        <div class="diagram-section">
+            <h2>6. Lift & Shift Process</h2>
+            <div class="mermaid">
+graph TD
+    A[Lift & Shift Process] --> B[Check Prerequisites]
+    B --> B1[Source system must be\non supported release]
+    B --> C[Provision Target System]
+    C --> C1[Provision new hardware\nin new landscape]
+    C --> D[Backup & Restore]
+    D --> D1[Use Software Provisioning Manager]
+    D --> D2[Backup current system]
+    D --> D3[Restore on target system]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333
+    style C fill:#bbf,stroke:#333
+    style D fill:#bbf,stroke:#333
+            </div>
+        </div>
+        
+        <div class="diagram-section">
+            <h2>7. Comparison of Transition Options</h2>
+            <div class="mermaid">
+graph TB
+    subgraph "New Implementation (50%)"
+        NI1[Benefits]
+        NI1 --> NI1a[Re-engineer business processes]
+        NI1 --> NI1b[Quickly capture full value]
+        NI1 --> NI1c[Clean core - eliminates modifications]
+        
+        NI2[Outcomes]
+        NI2 --> NI2a[Innovate with new processes]
+        NI2 --> NI2b[Move off obsolete technology]
+        NI2 --> NI2c[Consolidate legacy systems]
+        
+        NI3[Considerations]
+        NI3 --> NI3a[Big bang or phased rollout]
+        NI3 --> NI3b[Closed transactions can't be migrated]
+    end
+    
+    subgraph "System Conversion (48%)"
+        SC1[Benefits]
+        SC1 --> SC1a[Keep investments in data/processes]
+        SC1 --> SC1b[Rapid conversion to cloud]
+        SC1 --> SC1c[Incremental innovation adoption]
+        
+        SC2[Outcomes]
+        SC2 --> SC2a[Reuse existing processes]
+        SC2 --> SC2b[Full historical data conversion]
+        SC2 --> SC2c[Big bang rollout]
+        
+        SC3[Considerations]
+        SC3 --> SC3a[Must be on recent release]
+        SC3 --> SC3b[1:1 transition only]
+        SC3 --> SC3c[Not for system consolidation]
+    end
+    
+    subgraph "Selective Data Transition (2%)"
+        SD1[Benefits]
+        SD1 --> SD1a[Mix of process reuse/optimization]
+        SD1 --> SD1b[Retain historic data]
+        SD1 --> SD1c[Consolidate from multiple systems]
+        
+        SD2[Outcomes]
+        SD2 --> SD2a[Optimize with mix of old/new]
+        SD2 --> SD2b[Eliminate outdated technology]
+        SD2 --> SD2c[Phase in by country/business unit]
+        
+        SD3[Considerations]
+        SD3 --> SD3a[SAP doesn't certify 3rd party tools]
+        SD3 --> SD3b[Support issues may be chargeable]
+    end
+    
+    style NI1 fill:#bbf,stroke:#333
+    style NI2 fill:#bbf,stroke:#333
+    style NI3 fill:#bbf,stroke:#333
+    style SC1 fill:#bbf,stroke:#333
+    style SC2 fill:#bbf,stroke:#333
+    style SC3 fill:#bbf,stroke:#333
+    style SD1 fill:#bbf,stroke:#333
+    style SD2 fill:#bbf,stroke:#333
+    style SD3 fill:#bbf,stroke:#333
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>SAP S/4HANA Cloud Private Edition Transition Paths Visual Learning Guide</p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Mermaid with specific configuration
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose',
+            fontFamily: 'Arial, sans-serif',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true
+            }
+        });
+
+        // Function to render all diagrams with proper timing
+        document.addEventListener('DOMContentLoaded', function() {
+            // Slight delay to ensure DOM is fully loaded
+            setTimeout(function() {
+                // Get all mermaid diagram elements
+                const diagrams = document.querySelectorAll('.mermaid');
+                
+                // Process each diagram
+                diagrams.forEach(function(diagram) {
+                    // Force Mermaid to reparse this element
+                    mermaid.init(undefined, diagram);
+                });
+            }, 500);
+        });
+    </script>
+</body>
+</html>
