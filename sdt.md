@@ -12,9 +12,9 @@ graph TD
     E --> E1[Master Data Migration]
     E --> E2[Open Items Migration]
     
-    style A fill:#ffffde,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333
-    style C fill:#bbf,stroke:#333
-    style D fill:#bbf,stroke:#333
-    style E fill:#bbf,stroke:#333
+    style A fill:#FF5733,stroke:#333,stroke-width:2px
+    style B fill:#5733FF,stroke:#333
+    style C fill:#5733FF,stroke:#333
+    style D fill:#5733FF,stroke:#333
+    style E fill:#5733FF,stroke:#333
 ```
