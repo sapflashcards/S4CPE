@@ -24,6 +24,6 @@ graph TD
     style D fill:#5733FF,stroke:#333
     style E fill:#5733FF,stroke:#333
     style F fill:#5733FF,stroke:#333
-    style G fill:#f4c366,stroke:#333
-    style H fill:#f4c366,stroke:#333
+    style G fill:#8888aa,stroke:#333
+    style H fill:#8888aa,stroke:#333
 ```
