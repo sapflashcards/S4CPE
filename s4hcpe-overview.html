@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP S/4HANA Cloud Private Edition - Learning Diagrams</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.4/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #0066cc;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #0066cc;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        .diagram-container {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .mermaid {
+            display: flex;
+            justify-content: center;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 16px;
+            background-color: #eff8ff;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>SAP S/4HANA Cloud Private Edition - Visual Learning Guide</h1>
+    
+    <p>This page contains visual diagrams to help you understand key concepts related to SAP S/4HANA Cloud Private Edition, including its characteristics, the RISE with SAP methodology, business processes, transition paths, and the clean core concept.</p>
+    
+    <h2>1. SAP S/4HANA Cloud Private Edition Overview</h2>
+    <div class="diagram-container">
+        <div class="mermaid">
+flowchart TD
+    s4hana["SAP S/4HANA Cloud Private Edition"]
+    s4hana --> ux["New User Experience<br/>SAP Fiori Launchpad"]
+    s4hana --> bp["Ready-to-run<br/>Best Practices"]
+    s4hana --> fd["Regular Feature<br/>Deliveries"]
+    s4hana --> ej["Evolutionary Journey<br/>to Cloud"]
+    s4hana --> lc["Market-leading<br/>Localization & Customization"]
+    s4hana --> sm["Seamless Migration<br/>from SAP ERP"]
+    
+    subgraph key["Key Characteristics"]
+        ux
+        bp
+        fd
+        ej
+        lc
+        sm
+    end
+    
+    subgraph fit["Best Fit For"]
+        mid["Mid-size to Large Customers"]
+        ind["Industry-specific Needs"]
+        cust["Many Customization Requirements"]
+    end
+    
+    s4hana --> fit
+    
+    subgraph tech["Technical Details"]
+        onprem["SAP S/4HANA on-premise software"]
+        hec["Hosted in SAP HANA Enterprise Cloud (HEC)"]
+        rel["Same Release Cycle as On-premise (every 2 years)"]
+        upg["Upgrade required at least once every 7 years"]
+    end
+    
+    s4hana --> tech
+        </div>
+        <div class="description">
+            SAP S/4HANA Cloud Private Edition is a tailored-to-fit cloud ERP solution that offers the customization flexibility of on-premise systems with cloud benefits. It's particularly suited for mid-size to large customers with industry-specific needs and extensive customization requirements. This diagram shows its key characteristics, target customers, and technical details.
+        </div>
+    </div>
+    
+    <h2>2. RISE with SAP Methodology</h2>
+    <div class="diagram-container">
+        <div class="mermaid">
+flowchart LR
+    subgraph "Project Phases"
+        discover["Discover"] --> prepare["Prepare"] --> explore["Explore"] --> realize["Realize"] --> deploy["Deploy"] --> run["Run"]
+    end
+    
+    subgraph "Clean Core Dimensions"
+        bp["Business Processes"]
+        ext["Extensibility"]
+        data["Data"]
+        int["Integration"]
+        op["Operation"]
+    end
+    
+    subgraph "RISE with SAP Methodology Enhancements"
+        qg["Clean Core Q-Gates<br/>End of each phase"]
+        cr["Clean Core Reports<br/>Generated from SAP Cloud ALM"]
+        crb["Clean Core Runbook<br/>Measures performance against KPIs"]
+        mr["RISE Methodology Report<br/>Shows adherence to Clean Core dimensions"]
+    end
+    
+    subgraph "Implementation Support"
+        eloe["Embedded Launch<br/>Onboarding Expert"]
+        calm["SAP Cloud ALM<br/>(Application Lifecycle Management)"]
+        ccsp["Clean Core Success Plan"]
+    end
+        </div>
+        <div class="description">
+            The RISE with SAP Methodology enhances the SAP Activate Methodology roadmap with new tools and resources to support implementation of SAP S/4HANA Cloud Private Edition. It brings predictability and transparency to the implementation process and focuses on maintaining a "Clean Core" across various dimensions.
+        </div>
+    </div>
+    
+    <h2>3. SAP S/4HANA Business Process Overview</h2>
+    <div class="diagram-container">
+        <div class="mermaid">
+flowchart TD
+    erp["SAP S/4HANA ERP"]
+    
+    erp --> admin["Finance-led Administrative ERP"]
+    erp --> op["Operational ERP"]
+    
+    subgraph "Administrative ERP Processes"
+        p2p1["Procure to Pay<br/>(Finance & Procurement)"]
+        o2c1["Order to Cash<br/>(Sales & Finance)"]
+        r2r["Record to Report<br/>(Finance)"]
+    end
+    
+    admin --> p2p1
+    admin --> o2c1
+    admin --> r2r
+    
+    subgraph "Operational ERP Processes"
+        i2m["Idea to Market<br/>(R&D Engineering)"]
+        p2p2["Procure to Pay<br/>(Sourcing & Procurement)"]
+        p2f["Plan to Fulfill<br/>(Manufacturing & Supply Chain)"]
+        o2c2["Order to Cash<br/>(Sales, Supply Chain & Service)"]
+    end
+    
+    op --> i2m
+    op --> p2p2
+    op --> p2f
+    op --> o2c2
+    
+    subgraph "Industry Solutions"
+        enr["Energy & Natural Resources"]
+        fs["Financial Services"]
+        ci["Consumer Industries"]
+        di["Discrete Industries"]
+        si["Service Industries"]
+        ps["Public Services"]
+    end
+    
+    erp --> ind["Industry-specific Solutions"]
+    ind --> enr
+    ind --> fs
+    ind --> ci
+    ind --> di
+    ind --> si
+    ind --> ps
+        </div>
+        <div class="description">
+            This diagram shows the key business processes in SAP S/4HANA, organized into Finance-led Administrative ERP and Operational ERP. Administrative ERP covers core processes like Procure to Pay, Order to Cash, and Record to Report. Operational ERP adds processes related to product development and manufacturing. The system also supports industry-specific solutions across six major sectors.
+        </div>
+    </div>
+    
+    <h2>4. Transition Paths to SAP S/4HANA Cloud Private Edition</h2>
+    <div class="diagram-container">
+        <div class="mermaid">
+flowchart TD
+    start["Starting Point"] --> decision{"Choose Transition Path"}
+    
+    decision -->|"48% of Projects"| sc["System Conversion<br/>(1:1 conversion of existing SAP ERP)"]
+    decision -->|"50% of Projects"| ni["New Implementation<br/>(Greenfield/Fresh start)"]
+    decision -->|"2% of Projects"| sdt["Selective Data Transition<br/>(Mix & Match approach)"]
+    decision --> ls["Lift & Shift<br/>(Move without change)"]
+    
+    subgraph "New Implementation Process"
+        ni1["Software Installation"]
+        ni2["Pre-Configuration<br/>Content Activation"]
+        ni3["Software Configuration"]
+        ni4["Initial Data Load"]
+    end
+    
+    ni --> ni1 --> ni2 --> ni3 --> ni4
+    
+    subgraph "System Conversion Process"
+        sc1["Prepare ERP System"]
+        sc2["Database Migration"]
+        sc3["System Update"]
+        sc4["Data Conversion"]
+        sc5["Software Configuration"]
+    end
+    
+    sc --> sc1 --> sc2 --> sc3 --> sc4 --> sc5
+    
+    subgraph "Selective Data Transition"
+        sdt1["Shell Conversion"] 
+        sdt2["Mix & Match"]
+    end
+    
+    sdt --> sdt1
+    sdt --> sdt2
+    
+    subgraph "Lift & Shift Process"
+        ls1["Check Prerequisites"]
+        ls2["Provision Target System"]
+        ls3["Backup & Restore"]
+    end
+    
+    ls --> ls1 --> ls2 --> ls3
+        </div>
+        <div class="description">
+            This diagram illustrates the various transition paths to SAP S/4HANA Cloud Private Edition with their relative popularity and key processes. The main options are New Implementation (50% of projects), System Conversion (48%), Selective Data Transition (2%), and Lift & Shift. Each path has its own specific process steps and is suited to different customer scenarios.
+        </div>
+    </div>
+    
+    <h2>5. Clean Core Concept</h2>
+    <div class="diagram-container">
+        <div class="mermaid">
+flowchart TD
+    cc["Clean Core<br/>Keep core system clean to enable upgrades"]
+    
+    subgraph "Clean Core Dimensions"
+        bp["Business Processes"]
+        ext["Extensibility<br/>Decouple extensions from standard"]
+        data["Data<br/>Control data according to latest standards"]
+        int["Integration<br/>Keep landscape reliable and flexible"]
+        op["Operation<br/>Keep operations effective and efficient"]
+    end
+    
+    cc --> bp
+    cc --> ext
+    cc --> data
+    cc --> int
+    cc --> op
+    
+    subgraph "Benefits"
+        b1["Keep competitiveness while reducing complexity"]
+        b2["Easier adoption of new capabilities"]
+        b3["Adapt to changing business requirements"]
+        b4["Simplified upgrades"]
+        b5["Access to latest features"]
+    end
+    
+    cc --> b1
+    cc --> b2
+    cc --> b3
+    cc --> b4
+    cc --> b5
+    
+    cc --> gov["Strong Governance<br/>Required for each technical dimension"]
+        </div>
+        <div class="description">
+            The Clean Core concept is central to the RISE with SAP Methodology. It refers to keeping a customer's core system as clean as possible to avoid issues with upgrading software. This diagram shows the five dimensions of Clean Core (Business Processes, Extensibility, Data, Integration, and Operation), its key benefits, and the importance of strong governance across all technical dimensions.
+        </div>
+    </div>
+
+    <script>
+        // Initialize Mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose',
+            flowchart: {
+                useMaxWidth: false,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+</body>
+</html>
