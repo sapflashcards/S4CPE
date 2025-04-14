@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1800">
+  <!-- Background -->
+  <rect width="800" height="1800" fill="#f8f9fa"/>
+  
+  <!-- DIAGRAM 1: SAP Activate Methodology Phases -->
+  <rect x="50" y="50" width="700" height="200" rx="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <text x="400" y="80" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#0d47a1">SAP Activate Methodology Phases</text>
+  
+  <!-- Phase boxes -->
+  <rect x="80" y="100" width="100" height="80" rx="5" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="130" y="145" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Discover</text>
+  
+  <rect x="190" y="100" width="100" height="80" rx="5" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="240" y="145" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Prepare</text>
+  
+  <rect x="300" y="100" width="100" height="80" rx="5" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="350" y="145" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Explore</text>
+  
+  <rect x="410" y="100" width="100" height="80" rx="5" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="460" y="145" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Realize</text>
+  
+  <rect x="520" y="100" width="100" height="80" rx="5" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="570" y="145" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Deploy</text>
+  
+  <rect x="630" y="100" width="100" height="80" rx="5" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="680" y="145" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Run</text>
+  
+  <!-- Arrows -->
+  <path d="M180 140 L190 140" stroke="#1976d2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M290 140 L300 140" stroke="#1976d2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M400 140 L410 140" stroke="#1976d2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M510 140 L520 140" stroke="#1976d2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M620 140 L630 140" stroke="#1976d2" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1976d2"/>
+    </marker>
+  </defs>
+  
+  <!-- DIAGRAM 2: Key Stakeholders Map -->
+  <rect x="50" y="300" width="700" height="400" rx="10" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+  <text x="400" y="330" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#2e7d32">Key Stakeholders Map</text>
+  
+  <!-- Customer side -->
+  <rect x="80" y="360" width="280" height="300" rx="5" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="220" y="380" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#2e7d32">Customer</text>
+  
+  <!-- Customer roles -->
+  <rect x="90" y="400" width="260" height="50" rx="5" fill="#a5d6a7" stroke="#388e3c" stroke-width="1"/>
+  <text x="220" y="430" font-family="Arial" font-size="14" text-anchor="middle">Executive Sponsor (CTO/CIO)</text>
+  
+  <rect x="90" y="460" width="260" height="50" rx="5" fill="#a5d6a7" stroke="#388e3c" stroke-width="1"/>
+  <text x="220" y="490" font-family="Arial" font-size="14" text-anchor="middle">System Admin (IT Contact)</text>
+  
+  <rect x="90" y="520" width="260" height="50" rx="5" fill="#a5d6a7" stroke="#388e3c" stroke-width="1"/>
+  <text x="220" y="550" font-family="Arial" font-size="14" text-anchor="middle">Project Manager</text>
+  
+  <rect x="90" y="580" width="260" height="50" rx="5" fill="#a5d6a7" stroke="#388e3c" stroke-width="1"/>
+  <text x="220" y="610" font-family="Arial" font-size="14" text-anchor="middle">Line of Business (LoB) Experts</text>
+  
+  <!-- Partner/SAP side -->
+  <rect x="440" y="360" width="280" height="300" rx="5" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+  <text x="580" y="380" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#2e7d32">Partner/SAP</text>
+  
+  <!-- Partner roles -->
+  <rect x="450" y="400" width="260" height="50" rx="5" fill="#a5d6a7" stroke="#388e3c" stroke-width="1"/>
+  <text x="580" y="430" font-family="Arial" font-size="14" text-anchor="middle">Executive Sponsor</text>
+  
+  <rect x="450" y="460" width="260" height="50" rx="5" fill="#a5d6a7" stroke="#388e3c" stroke-width="1"/>
+  <text x="580" y="490" font-family="Arial" font-size="14" text-anchor="middle">Lead Configuration/Conversion Expert</text>
+  
+  <rect x="450" y="520" width="260" height="50" rx="5" fill="#a5d6a7" stroke="#388e3c" stroke-width="1"/>
+  <text x="580" y="550" font-family="Arial" font-size="14" text-anchor="middle">Project Manager</text>
+  
+  <rect x="450" y="580" width="260" height="50" rx="5" fill="#a5d6a7" stroke="#388e3c" stroke-width="1"/>
+  <text x="580" y="610" font-family="Arial" font-size="14" text-anchor="middle">LoB Configuration Experts</text>
+  
+  <!-- Steering Committee connection -->
+  <path d="M220 425 L580 425" stroke="#388e3c" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+  <rect x="350" y="405" width="100" height="40" rx="20" fill="#81c784" stroke="#388e3c" stroke-width="1"/>
+  <text x="400" y="430" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">Steering Committee</text>
+  
+  <!-- Project Manager connection -->
+  <path d="M220 545 L580 545" stroke="#388e3c" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+  
+  <!-- DIAGRAM 3: Project Team Structure -->
+  <rect x="50" y="750" width="700" height="350" rx="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+  <text x="400" y="780" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#e65100">Project Team Structure</text>
+  
+  <!-- Steering Committee -->
+  <rect x="250" y="810" width="300" height="60" rx="5" fill="#ffe0b2" stroke="#f57c00" stroke-width="2"/>
+  <text x="400" y="845" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#e65100">Steering Committee</text>
+  
+  <!-- Project Management -->
+  <rect x="250" y="890" width="300" height="60" rx="5" fill="#ffe0b2" stroke="#f57c00" stroke-width="2"/>
+  <text x="400" y="925" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#e65100">Project Management</text>
+  
+  <!-- Implementation Teams -->
+  <rect x="100" y="970" width="250" height="100" rx="5" fill="#ffe0b2" stroke="#f57c00" stroke-width="2"/>
+  <text x="225" y="990" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#e65100">Customer Implementation Team</text>
+  <text x="225" y="1015" font-family="Arial" font-size="12" text-anchor="middle" fill="#e65100">• System Admin</text>
+  <text x="225" y="1035" font-family="Arial" font-size="12" text-anchor="middle" fill="#e65100">• LoB Experts</text>
+  <text x="225" y="1055" font-family="Arial" font-size="12" text-anchor="middle" fill="#e65100">• Change Management Team</text>
+  
+  <rect x="450" y="970" width="250" height="100" rx="5" fill="#ffe0b2" stroke="#f57c00" stroke-width="2"/>
+  <text x="575" y="990" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#e65100">Partner/SAP Implementation Team</text>
+  <text x="575" y="1015" font-family="Arial" font-size="12" text-anchor="middle" fill="#e65100">• Lead Configuration Expert</text>
+  <text x="575" y="1035" font-family="Arial" font-size="12" text-anchor="middle" fill="#e65100">• LoB Configuration Experts</text>
+  <text x="575" y="1055" font-family="Arial" font-size="12" text-anchor="middle" fill="#e65100">• Technical Experts</text>
+  
+  <!-- Connection lines -->
+  <path d="M400 870 L400 890" stroke="#f57c00" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+  <path d="M400 950 L250 970" stroke="#f57c00" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+  <path d="M400 950 L550 970" stroke="#f57c00" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+  
+  <defs>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f57c00"/>
+    </marker>
+  </defs>
+  
+  <!-- DIAGRAM 4: Services and Responsibilities -->
+  <rect x="50" y="1150" width="700" height="600" rx="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <text x="400" y="1180" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#0d47a1">Services and Responsibilities</text>
+  
+  <!-- Services Categories -->
+  <rect x="100" y="1210" width="600" height="50" rx="5" fill="#bbdefb" stroke="#1976d2" stroke-width="2"/>
+  <text x="400" y="1240" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#0d47a1">SAP S/4HANA Cloud Private Edition Services</text>
+  
+  <!-- Standard Services -->
+  <rect x="100" y="1280" width="280" height="180" rx="5" fill="#90caf9" stroke="#1976d2" stroke-width="2"/>
+  <text x="240" y="1300" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#0d47a1">Standard Services (SAP)</text>
+  <text x="240" y="1325" font-family="Arial" font-size="12" text-anchor="middle">Infrastructure Operations</text>
+  <text x="240" y="1350" font-family="Arial" font-size="12" text-anchor="middle">OS Management</text>
+  <text x="240" y="1375" font-family="Arial" font-size="12" text-anchor="middle">HANA Database Platform Operations</text>
+  <text x="240" y="1400" font-family="Arial" font-size="12" text-anchor="middle">System Monitoring</text>
+  <text x="240" y="1425" font-family="Arial" font-size="12" text-anchor="middle">Technical Application Basis Operations</text>
+  
+  <!-- Cloud Application Services -->
+  <rect x="420" y="1280" width="280" height="180" rx="5" fill="#90caf9" stroke="#1976d2" stroke-width="2"/>
+  <text x="560" y="1300" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#0d47a1">Cloud Application Services (Partners/SAP)</text>
+  <text x="560" y="1325" font-family="Arial" font-size="12" text-anchor="middle">Initial Fiori Launchpad Configuration</text>
+  <text x="560" y="1350" font-family="Arial" font-size="12" text-anchor="middle">Security Management</text>
+  <text x="560" y="1375" font-family="Arial" font-size="12" text-anchor="middle">Certificate Handling</text>
+  <text x="560" y="1400" font-family="Arial" font-size="12" text-anchor="middle">SAP Best Practices Activation</text>
+  <text x="560" y="1425" font-family="Arial" font-size="12" text-anchor="middle">Application Management Services</text>
+  
+  <!-- Optional/Additional Services -->
+  <rect x="100" y="1480" width="280" height="180" rx="5" fill="#90caf9" stroke="#1976d2" stroke-width="2"/>
+  <text x="240" y="1500" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#0d47a1">Optional/Additional Services</text>
+  <text x="240" y="1500" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#0d47a1">(Partners/SAP)</text>
+  <text x="240" y="1525" font-family="Arial" font-size="12" text-anchor="middle">Implementation Support</text>
+  <text x="240" y="1550" font-family="Arial" font-size="12" text-anchor="middle">Change Management</text>
+  <text x="240" y="1575" font-family="Arial" font-size="12" text-anchor="middle">Functional Application Management</text>
+  <text x="240" y="1600" font-family="Arial" font-size="12" text-anchor="middle">Integration Services</text>
+  <text x="240" y="1625" font-family="Arial" font-size="12" text-anchor="middle">Extensions Development</text>
+  
+  <!-- Excluded Tasks -->
+  <rect x="420" y="1480" width="280" height="180" rx="5" fill="#90caf9" stroke="#1976d2" stroke-width="2"/>
+  <text x="560" y="1500" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#0d47a1">Excluded Tasks (Customer Only)</text>
+  <text x="560" y="1525" font-family="Arial" font-size="12" text-anchor="middle">Business Strategy</text>
+  <text x="560" y="1550" font-family="Arial" font-size="12" text-anchor="middle">User Permissions and Maintenance</text>
+  <text x="560" y="1575" font-family="Arial" font-size="12" text-anchor="middle">Data Processing</text>
+  <text x="560" y="1600" font-family="Arial" font-size="12" text-anchor="middle">Compliance with Data Privacy Regulations</text>
+  <text x="560" y="1625" font-family="Arial" font-size="12" text-anchor="middle">(e.g., GDPR)</text>
+  
+  <!-- Legend at bottom -->
+  <rect x="50" y="1770" width="700" height="20" fill="#f8f9fa"/>
+  <text x="400" y="1785" font-family="Arial" font-size="12" text-anchor="middle" fill="#424242">SAP S/4HANA Cloud Implementation Visual Learning Guide</text>
+</svg>
