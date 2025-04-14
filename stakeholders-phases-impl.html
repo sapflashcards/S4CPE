@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP Implementation Stakeholders and Processes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.0/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #0066cc;
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #0066cc;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        .diagram-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .explanation {
+            background-color: #e6f0ff;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>SAP Implementation Stakeholders and Processes</h1>
+    
+    <h2>1. SAP Implementation Stakeholders and Phases</h2>
+    <div class="explanation">
+        This diagram shows the relationship between key stakeholders and their activities across the six phases of the SAP Activate Methodology.
+    </div>
+    <div class="diagram-container">
+        <div class="mermaid">
+            flowchart TD
+                subgraph "Project Phases"
+                    Discover --> Prepare --> Explore --> Realize --> Deploy --> Run
+                end
+                
+                subgraph "Key Stakeholders"
+                    Executive["Customer Executive Sponsors\n(CTO, CIO)"] 
+                    SysAdmin["Customer System Admin\n(IT Contact)"]
+                    PartnerTeam["Partner/SAP Implementation Team"]
+                    CustomerPM["Customer Project Manager"]
+                    LoBExperts["Customer LoB Experts"]
+                    ChangeTeam["Change Management Team"]
+                    Consumers["Solution Consumers\n(End Users)"]
+                end
+                
+                Executive -- "Build business case\nComplete Discovery Assessment\nMake purchase decision" --> Discover
+                SysAdmin -- "Provision systems\nGrant access permissions" --> Prepare
+                PartnerTeam -- "Staff experts per LoB\nLead configuration\nSetup systems" --> Prepare
+                CustomerPM -- "Project tracking\nStatus reporting" --> Prepare
+                
+                PartnerTeam -- "Lead Fit-to-Standard workshops\nDemonstrate processes" --> Explore
+                LoBExperts -- "Provide feedback\nProvide config values" --> Explore
+                
+                PartnerTeam -- "Implement requirements\nConfiguration\nCustomization" --> Realize
+                LoBExperts -- "User Acceptance Testing" --> Realize
+                
+                ChangeTeam -- "Onboarding\nTraining" --> Deploy
+                Consumers -- "System adoption" --> Deploy
+        </div>
+    </div>
+    
+    <h2>2. SAP Project Team Structure</h2>
+    <div class="explanation">
+        This diagram illustrates the organizational structure of the implementation project, showing the parallel roles between customer and partner teams.
+    </div>
+    <div class="diagram-container">
+        <div class="mermaid">
+            flowchart TD
+                subgraph "Steering Committee"
+                    CustomerExec["Customer Executive Sponsors"]
+                    PartnerExec["Partner/SAP Executive Sponsors"]
+                end
+                
+                subgraph "Customer Project Team"
+                    CustomerPM["Customer Project Manager"]
+                    SysAdmin["System Admin (IT Contact)"]
+                    CustomerLoBExperts["Customer LoB Experts"]
+                    ChangeTeam["Change Management Team"]
+                    CustomerTech["Customer Technical Experts\n(Optional)"]
+                end
+                
+                subgraph "Partner/SAP Project Team"
+                    PartnerPM["Partner/SAP Project Manager"]
+                    ConfigExpert["Lead Configuration Expert"]
+                    ConversionExpert["Lead Conversion Expert\n(System Conversions)"]
+                    PartnerLoBExperts["Partner/SAP LoB Experts"]
+                    PartnerTech["Partner Technical Experts\n(Integration, Extensions, Data Migration)"]
+                end
+                
+                CustomerExec --- PartnerExec
+                CustomerPM --- PartnerPM
+                SysAdmin --- ConfigExpert
+                CustomerLoBExperts --- PartnerLoBExperts
+                CustomerTech --- PartnerTech
+        </div>
+    </div>
+    
+    <h2>3. SAP S/4HANA Cloud Private Edition Service Responsibilities</h2>
+    <div class="explanation">
+        This diagram outlines which services are provided by SAP, partner organizations, or the customer themselves.
+    </div>
+    <div class="diagram-container">
+        <div class="mermaid">
+            graph TD
+                subgraph "SAP Responsibilities (Standard Services)"
+                    InfraOps["Infrastructure Operations Management"]
+                    OSMgmt["Operating System Management"]
+                    HANAOps["HANA Database Platform Operations"]
+                    HealthCheck["Health Check Services"]
+                    TechOps["SAP Technical Application Basis Operations"]
+                end
+                
+                subgraph "Partner or SAP Responsibilities"
+                    CloudApp["Cloud Application Services\n(Some included, some additional fee)"]
+                    ImplServ["Implementation Support"]
+                    AppMgmt["Application Managed Services"]
+                    Optional["Optional Services\n(Additional fee)"]
+                    OneOff["Additional One-off Services\n(Additional fee)"]
+                end
+                
+                subgraph "Customer Responsibilities"
+                    BizStrategy["Business Strategy"]
+                    ProcessSelection["Process Selection"]
+                    UserPerms["User Permissions and Maintenance"]
+                    DataProc["Data Processing"]
+                    Compliance["Compliance with Data Privacy Regulations"]
+                end
+        </div>
+    </div>
+    
+    <h2>4. SAP S/4HANA Cloud Implementation Process</h2>
+    <div class="explanation">
+        This diagram presents a detailed view of the activities in each phase of the implementation process.
+    </div>
+    <div class="diagram-container">
+        <div class="mermaid">
+            flowchart LR
+                subgraph Discover-Phase
+                    BusinessCase["Build Business Case"]
+                    DiscoveryAssessment["Complete Digital Discovery Assessment"]
+                    Purchase["Make Purchase Decision"]
+                end
+                
+                subgraph Prepare-Phase
+                    Provision["Provision Systems"]
+                    Access["Grant System Access"]
+                    StaffTeam["Staff Implementation Team"]
+                end
+                
+                subgraph Explore-Phase
+                    FitStandard["Fit-to-Standard Workshops"]
+                    ProcessValidation["Process Validation"]
+                    ConfigData["Gather Configuration Data"]
+                    CustomReq["Capture Customization Requirements"]
+                end
+                
+                subgraph Realize-Phase
+                    Config["System Configuration"]
+                    RoleCustom["Business Role Customization"]
+                    Extensions["Build Extensions"]
+                    DataMigration["Data Migration"]
+                    Integration["Set Up Integrations"]
+                    Testing["Testing"]
+                end
+                
+                subgraph Deploy-Phase
+                    Onboarding["User Onboarding"]
+                    Training["User Training"]
+                    GoLive["Go-Live"]
+                end
+                
+                subgraph Run-Phase
+                    Support["Ongoing Support"]
+                    Maintenance["System Maintenance"]
+                end
+                
+                Discover-Phase --> Prepare-Phase
+                Prepare-Phase --> Explore-Phase
+                Explore-Phase --> Realize Phase
+                Realize-Phase --> Deploy-Phase
+                Deploy-Phase --> Run-Phase
+        </div>
+    </div>
+    
+    <h2>5. New Implementation vs. System Conversion</h2>
+    <div class="explanation">
+        This diagram compares the key differences between implementing a new system and converting an existing system.
+    </div>
+    <div class="diagram-container">
+        <div class="mermaid">
+            flowchart TB
+                subgraph "New Implementation"
+                    NewDiscover["Discover: Detailed discovery to select SAP Best Practices business processes"]
+                    NewPrepare["Prepare: Lead configuration expert activates business process content"]
+                    NewExplore["Explore: Demonstrate all selected processes in sandbox"]
+                    NewRealize["Realize: Configure and customize based on requirements"]
+                end
+                
+                subgraph "System Conversion"
+                    ConvDiscover["Discover: Quick qualification information only"]
+                    ConvPrepare["Prepare: Lead conversion expert initiates system conversion"]
+                    ConvExplore["Explore: Demonstrate only new functionality or compatibility scope processes"]
+                    ConvRealize["Realize: Validate converted processes and implement new requirements"]
+                end
+        </div>
+    </div>
+    
+    <footer>
+        Created from SAP S/4HANA Cloud Private Edition implementation documentation
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            mermaid.initialize({
+                startOnLoad: true,
+                theme: 'default',
+                flowchart: {
+                    useMaxWidth: true,
+                    htmlLabels: true,
+                    curve: 'basis'
+                },
+                fontFamily: 'Arial, sans-serif'
+            });
+        });
+    </script>
+</body>
+</html>
