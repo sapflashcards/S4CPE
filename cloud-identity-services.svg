@@ -1,0 +1,57 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="400" fill="#f7f7f7"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#0066cc">SAP Cloud Identity Services</text>
+  
+  <!-- Main Container -->
+  <rect x="150" y="70" width="500" height="300" rx="15" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="400" y="95" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#0066cc">SAP Cloud Identity Services on BTP</text>
+  
+  <!-- IAS Box -->
+  <rect x="180" y="120" width="200" height="180" rx="10" fill="#ffe6cc" stroke="#ff8c00" stroke-width="2"/>
+  <text x="280" y="145" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#ff8c00">Identity Authentication</text>
+  <text x="280" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="#ff8c00">Service (IAS)</text>
+  
+  <rect x="200" y="180" width="160" height="100" rx="5" fill="#fff" stroke="#ff8c00" stroke-width="1"/>
+  <text x="280" y="200" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Capabilities</text>
+  <text x="280" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• User Account Creation</text>
+  <text x="280" y="240" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Permission Assignment</text>
+  <text x="280" y="260" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Single Sign-On (SSO)</text>
+  
+  <!-- IPS Box -->
+  <rect x="420" y="120" width="200" height="180" rx="10" fill="#d9f2e6" stroke="#00994d" stroke-width="2"/>
+  <text x="520" y="145" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#00994d">Identity Provisioning</text>
+  <text x="520" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="#00994d">Service (IPS)</text>
+  
+  <rect x="440" y="180" width="160" height="100" rx="5" fill="#fff" stroke="#00994d" stroke-width="1"/>
+  <text x="520" y="200" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Capabilities</text>
+  <text x="520" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Run Jobs for User Creation</text>
+  <text x="520" y="240" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Assign Permissions</text>
+  <text x="520" y="260" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Automate User Management</text>
+  
+  <!-- Systems Connected -->
+  <ellipse cx="190" cy="330" rx="30" ry="20" fill="#cce6ff" stroke="#0080ff" stroke-width="1"/>
+  <text x="190" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">S/4HANA</text>
+  
+  <ellipse cx="280" cy="330" rx="30" ry="20" fill="#cce6ff" stroke="#0080ff" stroke-width="1"/>
+  <text x="280" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">BTP</text>
+  
+  <ellipse cx="370" cy="330" rx="30" ry="20" fill="#cce6ff" stroke="#0080ff" stroke-width="1"/>
+  <text x="370" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Cloud ALM</text>
+  
+  <ellipse cx="460" cy="330" rx="30" ry="20" fill="#cce6ff" stroke="#0080ff" stroke-width="1"/>
+  <text x="460" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">SAP for Me</text>
+  
+  <ellipse cx="550" cy="330" rx="40" ry="20" fill="#cce6ff" stroke="#0080ff" stroke-width="1"/>
+  <text x="550" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Other Systems</text>
+  
+  <!-- Connection Lines -->
+  <path d="M 280 280 C 280 300, 190 310, 190 330" stroke="#666666" stroke-width="1" fill="none"/>
+  <path d="M 280 280 C 280 310, 280 330, 280 330" stroke="#666666" stroke-width="1" fill="none"/>
+  <path d="M 280 280 C 280 300, 370 310, 370 330" stroke="#666666" stroke-width="1" fill="none"/>
+  
+  <path d="M 520 280 C 520 300, 460 310, 460 330" stroke="#666666" stroke-width="1" fill="none"/>
+  <path d="M 520 280 C 520 300, 550 310, 550 330" stroke="#666666" stroke-width="1" fill="none"/>
+</svg>
