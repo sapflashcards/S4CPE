@@ -7,7 +7,7 @@ flowchart LR
     SCIS --> IAS["Identity Authentication Service (IAS)"]
     SCIS --> IPS["Identity Provisioning Service (IPS)"]
     
-    CALM --> BTC["Business Transformation\nCenter"]
+    CALM --> BTC["Business Transformation Center"]
     CALM --> IMP["Cloud ALM for Implementation"]
     CALM --> OPS["Cloud ALM for Operations"]
     CALM --> SER["Cloud ALM for Service"]
