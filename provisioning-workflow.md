@@ -21,10 +21,10 @@ flowchart LR
         M -->|Create users & assign permissions| N[Access to SAP Cloud ALM]
     end
     
-    style A fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    style A fill:#FF5733,stroke:#0288d1,stroke-width:2px
     style C fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    style G fill:#fff3e0,stroke:#e65100,stroke-width:2px
-    style I fill:#fff3e0,stroke:#e65100,stroke-width:2px
-    style L fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
-    style M fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,stroke-dasharray: 5 5
+    style G fill:#5733FF,stroke:#e65100,stroke-width:2px
+    style I fill:#5733FF,stroke:#e65100,stroke-width:2px
+    style L fill:#0F9D58,stroke:#388e3c,stroke-width:2px
+    style M fill:#0F9D58,stroke:#388e3c,stroke-width:2px,stroke-dasharray: 5 5
 ```
