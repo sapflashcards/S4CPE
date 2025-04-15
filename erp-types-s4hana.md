@@ -1,5 +1,5 @@
 ```mermaid
-flowchart TD
+flowchart LR
     erp["SAP S/4HANA ERP"]
     
     erp --> admin["Finance-led Administrative ERP"]
