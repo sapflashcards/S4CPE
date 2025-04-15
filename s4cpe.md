@@ -1,5 +1,5 @@
 ```mermaid
-flowchart TD
+flowchart LR
     s4hana["SAP S/4HANA Cloud Private Edition"]
     s4hana --> ux["New User Experience<br/>SAP Fiori Launchpad"]
     s4hana --> bp["Ready-to-run<br/>Best Practices"]
