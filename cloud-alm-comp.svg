@@ -1,0 +1,66 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="500" fill="#f7f7f7"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#0066cc">SAP Cloud ALM Components</text>
+  
+  <!-- Main ALM Box -->
+  <rect x="100" y="70" width="600" height="400" rx="20" fill="#e6f2ff" stroke="#0066cc" stroke-width="3"/>
+  
+  <!-- Component Boxes -->
+  <!-- Business Transformation Center -->
+  <rect x="130" y="100" width="250" height="150" rx="10" fill="#ffe6cc" stroke="#ff8c00" stroke-width="2"/>
+  <text x="255" y="125" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#ff8c00">Business Transformation Center</text>
+  
+  <rect x="150" y="140" width="210" height="90" rx="5" fill="#fff" stroke="#ff8c00" stroke-width="1"/>
+  <text x="255" y="160" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Digital Blueprint App</text>
+  <text x="255" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Define migration scope</text>
+  <text x="255" y="200" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Data-driven guidance</text>
+  <text x="255" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Support data scope workshops</text>
+  
+  <!-- ALM for Implementation -->
+  <rect x="420" y="100" width="250" height="150" rx="10" fill="#d9f2e6" stroke="#00994d" stroke-width="2"/>
+  <text x="545" y="125" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#00994d">ALM for Implementation</text>
+  
+  <rect x="440" y="140" width="210" height="90" rx="5" fill="#fff" stroke="#00994d" stroke-width="1"/>
+  <text x="545" y="160" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Implementation Apps</text>
+  <text x="545" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Follow SAP Activate Methodology</text>
+  <text x="545" y="200" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Assign actionable tasks</text>
+  <text x="545" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Track progress via dashboards</text>
+  
+  <!-- ALM for Operations -->
+  <rect x="130" y="270" width="250" height="150" rx="10" fill="#e6ccff" stroke="#8c00ff" stroke-width="2"/>
+  <text x="255" y="295" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#8c00ff">ALM for Operations</text>
+  
+  <rect x="150" y="310" width="210" height="90" rx="5" fill="#fff" stroke="#8c00ff" stroke-width="1"/>
+  <text x="255" y="330" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Operations Apps</text>
+  <text x="255" y="350" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• System monitoring</text>
+  <text x="255" y="370" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Health checks</text>
+  <text x="255" y="390" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Proactive issue management</text>
+  
+  <!-- ALM for Service -->
+  <rect x="420" y="270" width="250" height="150" rx="10" fill="#cce6ff" stroke="#0080ff" stroke-width="2"/>
+  <text x="545" y="295" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#0080ff">ALM for Service</text>
+  
+  <rect x="440" y="310" width="210" height="90" rx="5" fill="#fff" stroke="#0080ff" stroke-width="1"/>
+  <text x="545" y="330" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">Service Apps</text>
+  <text x="545" y="350" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Track service delivery</text>
+  <text x="545" y="370" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Collaborate with SAP Service</text>
+  <text x="545" y="390" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">• Document follow-up tasks</text>
+  
+  <!-- Central Platform Element -->
+  <rect x="350" y="430" width="100" height="30" rx="15" fill="#0066cc" stroke="#003366" stroke-width="2"/>
+  <text x="400" y="450" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">SAP BTP</text>
+  
+  <!-- Connecting Lines -->
+  <line x1="255" y1="250" x2="255" y2="270" stroke="#666666" stroke-width="2"/>
+  <line x1="545" y1="250" x2="545" y2="270" stroke="#666666" stroke-width="2"/>
+  <line x1="255" y1="420" x2="255" y2="445" stroke="#666666" stroke-width="2"/>
+  <line x1="545" y1="420" x2="545" y2="445" stroke="#666666" stroke-width="2"/>
+  <line x1="255" y1="445" x2="350" y2="445" stroke="#666666" stroke-width="2"/>
+  <line x1="545" y1="445" x2="450" y2="445" stroke="#666666" stroke-width="2"/>
+  
+  <!-- SAP Activate Integration -->
+  <text x="400" y="480" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Built on SAP Activate Methodology</text>
+</svg>
