@@ -1,5 +1,5 @@
 ```mermaid
-graph TD
+graph LR
     subgraph "SAP Responsibilities (Standard Services)"
         InfraOps["Infrastructure Operations Management"]
         OSMgmt["Operating System Management"]
