@@ -23,9 +23,9 @@ flowchart TD
     Q -->|Two-year release cycle| R[Assign System Group to Deployment Plan]
     R --> S[Assign Deployment Plan to Project]
     
-    style D fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style F fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
-    style G fill:#fff9c4,stroke:#fbc02d,stroke-width:2px
-    style I fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5
-    style M fill:#ede7f6,stroke:#4527a0,stroke-width:2px
+    style D fill:#FF5733,stroke:#0288d1,stroke-width:2px
+    style F fill:#5733FF,stroke:#388e3c,stroke-width:2px
+    style G fill:#0F9D58,stroke:#fbc02d,stroke-width:2px
+    style I fill:#FF5733,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5
+    style M fill:#5733FF,stroke:#4527a0,stroke-width:2px
 ```
