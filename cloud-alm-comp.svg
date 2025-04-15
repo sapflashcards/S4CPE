@@ -1,6 +1,6 @@
-<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 800 1500" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect x="0" y="0" width="800" height="500" fill="#f7f7f7"/>
+  <rect x="0" y="0" width="800" height="1500" fill="#f7f7f7"/>
   
   <!-- Title -->
   <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#0066cc">SAP Cloud ALM Components</text>
