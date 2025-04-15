@@ -1,5 +1,5 @@
 ```mermaid
-graph TD
+graph LR
     subgraph DEV["Development Tenant (080)"]
         D1["ABAP Development Tools"]
         D2["Full Development Access"]
