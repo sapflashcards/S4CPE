@@ -29,6 +29,6 @@ graph LR
     style A fill:#5733FF,stroke:#0288d1,stroke-width:2px
     style K fill:#FF5733,stroke:#7b1fa2,stroke-width:2px
     style B fill:#0F9D58,stroke:#388e3c,stroke-width:2px
-    style O fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
-    style R fill:#FF5733,stroke:#fbc02d,stroke-width:2px
+    style O fill:#0F9D58,stroke:#388e3c,stroke-width:2px
+    style R fill:#5733FF,stroke:#fbc02d,stroke-width:2px
 ```
