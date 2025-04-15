@@ -1,5 +1,5 @@
 ```mermaid
-flowchart TB
+flowchart LR
     subgraph "IT Contact Provisioning"
         A[IT Contact] -->|Provision via SAP for Me| B[SAP Cloud ALM]
     end
