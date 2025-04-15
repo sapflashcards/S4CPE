@@ -1,5 +1,5 @@
 ```mermaid
-flowchart TB
+flowchart LR
     A[SAP Cloud Appliance Library] -->|Deploy in 2-3 hours| B[Fully-Configured SAP S/4HANA System]
     
     B -->|Option 1| C[Trial System for Exploration]
