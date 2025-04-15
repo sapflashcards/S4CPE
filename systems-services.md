@@ -1,0 +1,113 @@
+```mermaid
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="600" fill="#f7f7f7"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#0066cc">SAP S/4HANA Cloud Private Edition System Landscape</text>
+  
+  <!-- System Boxes -->
+  <!-- Trial/CAL -->
+  <rect x="50" y="80" width="180" height="100" rx="10" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="140" y="110" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">SAP S/4HANA Trial</text>
+  <text x="140" y="130" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">(Cloud Appliance Library)</text>
+  <text x="140" y="150" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Exploration & Learning</text>
+  <text x="140" y="170" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">30-day free trial</text>
+  
+  <!-- Sandbox -->
+  <rect x="50" y="220" width="180" height="100" rx="10" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="140" y="250" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">Sandbox System</text>
+  <text x="140" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Fit-to-Standard</text>
+  <text x="140" y="290" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Configuration Data</text>
+  <text x="140" y="310" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Extension Requirements</text>
+  
+  <!-- Development -->
+  <rect x="270" y="150" width="180" height="140" rx="10" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="360" y="180" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">Development System</text>
+  
+  <!-- Development Clients -->
+  <rect x="290" y="200" width="140" height="30" rx="5" fill="#b3d1ff" stroke="#0066cc" stroke-width="1"/>
+  <text x="360" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Client 080 (Dev)</text>
+  
+  <rect x="290" y="240" width="140" height="30" rx="5" fill="#b3d1ff" stroke="#0066cc" stroke-width="1"/>
+  <text x="360" y="260" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Client 100 (Customizing)</text>
+  
+  <!-- Quality -->
+  <rect x="490" y="150" width="180" height="80" rx="10" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="580" y="180" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">Quality System</text>
+  <text x="580" y="200" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Testing before</text>
+  <text x="580" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Production Transport</text>
+  
+  <!-- Production -->
+  <rect x="580" y="270" width="180" height="80" rx="10" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="670" y="300" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">Production System</text>
+  <text x="670" y="320" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Daily Business</text>
+  <text x="670" y="340" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Operations</text>
+  
+  <!-- SAP Cloud Identity Services -->
+  <rect x="50" y="360" width="180" height="90" rx="10" fill="#ffe6cc" stroke="#ff8c00" stroke-width="2"/>
+  <text x="140" y="385" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#ff8c00">SAP Cloud Identity</text>
+  <text x="140" y="405" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Identity Authentication</text>
+  <text x="140" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Identity Provisioning</text>
+  <text x="140" y="445" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Single Sign-On (SSO)</text>
+  
+  <!-- SAP for Me -->
+  <rect x="270" y="360" width="180" height="90" rx="10" fill="#ffe6cc" stroke="#ff8c00" stroke-width="2"/>
+  <text x="360" y="385" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#ff8c00">SAP for Me</text>
+  <text x="360" y="405" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Self-Service Platform</text>
+  <text x="360" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">System Provisioning</text>
+  <text x="360" y="445" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">User Management</text>
+  
+  <!-- SAP Cloud ALM -->
+  <rect x="490" y="360" width="270" height="220" rx="10" fill="#ffe6cc" stroke="#ff8c00" stroke-width="2"/>
+  <text x="625" y="385" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#ff8c00">SAP Cloud ALM</text>
+  
+  <!-- Cloud ALM Components -->
+  <rect x="510" y="395" width="230" height="40" rx="5" fill="#ffd9b3" stroke="#ff8c00" stroke-width="1"/>
+  <text x="625" y="420" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Business Transformation Center</text>
+  
+  <rect x="510" y="445" width="230" height="40" rx="5" fill="#ffd9b3" stroke="#ff8c00" stroke-width="1"/>
+  <text x="625" y="470" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">ALM for Implementation</text>
+  
+  <rect x="510" y="495" width="230" height="40" rx="5" fill="#ffd9b3" stroke="#ff8c00" stroke-width="1"/>
+  <text x="625" y="520" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">ALM for Operations</text>
+  
+  <rect x="510" y="545" width="230" height="25" rx="5" fill="#ffd9b3" stroke="#ff8c00" stroke-width="1"/>
+  <text x="625" y="562" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">ALM for Service</text>
+  
+  <!-- BTP -->
+  <rect x="50" y="490" width="400" height="90" rx="10" fill="#d9f2e6" stroke="#00994d" stroke-width="2"/>
+  <text x="250" y="515" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#00994d">SAP Business Technology Platform (BTP)</text>
+  <text x="250" y="535" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Low/No-Code Extensions, Automations, Business Sites</text>
+  <text x="250" y="555" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">SAP Build Apps, Process Automation, Work Zone</text>
+  <text x="250" y="575" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">90+ Services for Customization & Extension</text>
+  
+  <!-- Arrows -->
+  <!-- Transport Path -->
+  <path d="M 230 270 L 270 220" stroke="#0066cc" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 450 220 L 490 190" stroke="#0066cc" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 670 230 L 670 270" stroke="#0066cc" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Supporting Systems -->
+  <path d="M 140 450 C 140 470, 250 470, 250 480" stroke="#ff8c00" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 360 450 C 360 470, 250 470, 250 480" stroke="#ff8c00" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 625 580 C 625 600, 250 600, 250 580" stroke="#ff8c00" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0066cc"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="30" width="20" height="10" fill="#e6f2ff" stroke="#0066cc" stroke-width="1"/>
+  <text x="75" y="40" font-family="Arial" font-size="12" fill="#333">System Landscapes</text>
+  
+  <rect x="170" y="30" width="20" height="10" fill="#ffe6cc" stroke="#ff8c00" stroke-width="1"/>
+  <text x="195" y="40" font-family="Arial" font-size="12" fill="#333">Supporting Services</text>
+  
+  <rect x="310" y="30" width="20" height="10" fill="#d9f2e6" stroke="#00994d" stroke-width="1"/>
+  <text x="335" y="40" font-family="Arial" font-size="12" fill="#333">Business Technology Platform</text>
+</svg>
+```
