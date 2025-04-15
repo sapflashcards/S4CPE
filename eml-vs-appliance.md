@@ -26,9 +26,9 @@ graph LR
         T --> V[Deviating Fiscal Year Variants]
     end
     
-    style A fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    style A fill:#5733FF,stroke:#0288d1,stroke-width:2px
     style K fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    style B fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style B fill:#0F9D58,stroke:#388e3c,stroke-width:2px
     style O fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
-    style R fill:#fff9c4,stroke:#fbc02d,stroke-width:2px
+    style R fill:#FF5733,stroke:#fbc02d,stroke-width:2px
 ```
