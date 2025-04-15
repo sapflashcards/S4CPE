@@ -21,7 +21,8 @@ gantt
     Assign Team Members              :2025-02-09, 3d
     
     section Implementation Phases
-    Discover Phase                   :2025-02-12, 15d
+    Discover Phase                   :2025-01-01, 15d
+    Prepare Phase                    :2025-01-20, 20d
     Explore Phase (Fit-to-Standard)  :crit, 2025-02-27, 45d
     Realize Phase                    :2025-04-13, 30d
     Deploy Phase                     :2025-05-13, 30d
