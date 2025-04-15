@@ -1,5 +1,5 @@
 ```mermaid
-flowchart TD
+flowchart LR
     SFM["SAP for Me\n(One-Stop Digital Platform)"] --> SCIS["SAP Cloud Identity Services"]
     SFM --> CALM["SAP Cloud ALM"]
     SFM --> BTP["SAP Business Technology Platform"]
