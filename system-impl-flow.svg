@@ -1,0 +1,87 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="600" fill="#f7f7f7"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#0066cc">SAP System Implementation Flowchart</text>
+  
+  <!-- New Implementation Path -->
+  <text x="200" y="80" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#0066cc">New Implementation</text>
+  
+  <!-- System Conversion Path -->
+  <text x="600" y="80" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#0066cc">System Conversion</text>
+  
+  <!-- Implementation Type Separator -->
+  <line x1="400" y1="90" x2="400" y2="570" stroke="#666666" stroke-width="2" stroke-dasharray="10,10"/>
+  
+  <!-- New Implementation Flow -->
+  <!-- Sandbox -->
+  <rect x="100" y="110" width="200" height="80" rx="10" fill="#ffe6cc" stroke="#ff8c00" stroke-width="2"/>
+  <text x="200" y="140" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#ff8c00">Sandbox</text>
+  <text x="200" y="160" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Deploy via CAL</text>
+  <text x="200" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Fit-to-Standard Workshops</text>
+  
+  <!-- New Dev -->
+  <rect x="100" y="230" width="200" height="80" rx="10" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="200" y="260" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">Development</text>
+  <text x="200" y="280" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Fresh System with SAP Standard</text>
+  <text x="200" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Business Process Content</text>
+  
+  <!-- New Quality -->
+  <rect x="100" y="350" width="200" height="80" rx="10" fill="#d9f2e6" stroke="#00994d" stroke-width="2"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#00994d">Quality</text>
+  <text x="200" y="400" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Transport Configuration</text>
+  <text x="200" y="420" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">from Development</text>
+  
+  <!-- New Production -->
+  <rect x="100" y="470" width="200" height="80" rx="10" fill="#cce6ff" stroke="#0080ff" stroke-width="2"/>
+  <text x="200" y="500" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0080ff">Production</text>
+  <text x="200" y="520" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Transport Configuration</text>
+  <text x="200" y="540" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">from Quality</text>
+  
+  <!-- System Conversion Flow -->
+  <!-- Convert Sandbox -->
+  <rect x="500" y="110" width="200" height="80" rx="10" fill="#ffe6cc" stroke="#ff8c00" stroke-width="2"/>
+  <text x="600" y="140" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#ff8c00">Sandbox</text>
+  <text x="600" y="160" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Convert Existing Sandbox</text>
+  <text x="600" y="180" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">with SUM Tool</text>
+  
+  <!-- Convert Dev -->
+  <rect x="500" y="230" width="200" height="80" rx="10" fill="#e6f2ff" stroke="#0066cc" stroke-width="2"/>
+  <text x="600" y="260" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">Development</text>
+  <text x="600" y="280" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Convert Existing Development</text>
+  <text x="600" y="300" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Based on Validated Approach</text>
+  
+  <!-- Convert Quality -->
+  <rect x="500" y="350" width="200" height="80" rx="10" fill="#d9f2e6" stroke="#00994d" stroke-width="2"/>
+  <text x="600" y="380" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#00994d">Quality</text>
+  <text x="600" y="400" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Convert Existing Quality</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Based on Validated Approach</text>
+  
+  <!-- Convert Production -->
+  <rect x="500" y="470" width="200" height="80" rx="10" fill="#cce6ff" stroke="#0080ff" stroke-width="2"/>
+  <text x="600" y="500" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0080ff">Production</text>
+  <text x="600" y="520" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Convert Existing Production</text>
+  <text x="600" y="540" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Cutover Weekend & Go-Live</text>
+  
+  <!-- Connection Arrows - New Implementation -->
+  <line x1="200" y1="190" x2="200" y2="220" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <line x1="200" y1="310" x2="200" y2="340" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <line x1="200" y1="430" x2="200" y2="460" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Connection Arrows - System Conversion -->
+  <line x1="600" y1="190" x2="600" y2="220" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="310" x2="600" y2="340" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="430" x2="600" y2="460" stroke="#666666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="280" y="560" width="240" height="30" rx="5" fill="#f0f0f0" stroke="#666666" stroke-width="1"/>
+  <text x="400" y="580" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#333">SAP Activate Methodology</text>
+</svg>
