@@ -1,5 +1,5 @@
 ```mermaid
-graph TD
+graph LR
     A[Selective Data Transition] --> B[Data Selection Options]
     B --> B1[ABAP repository objects]
     B --> B2[Configuration data]
