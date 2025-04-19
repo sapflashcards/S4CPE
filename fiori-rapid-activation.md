@@ -22,5 +22,5 @@ flowchart TD
     style I fill:#90be6d,stroke:#333,stroke-width:1px
     style C fill:#f94144,stroke:#333,stroke-width:2px
     style J fill:#43aa8b,stroke:#333,stroke-width:2px
-    style M fill:#277da1,stroke:#333,stroke-width:2px
+    style M fill:#0F9D58,stroke:#333,stroke-width:2px
 ```
