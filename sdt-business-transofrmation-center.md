@@ -1,5 +1,5 @@
 ```mermaid
-flowchart LR
+flowchart TD
     A[SAP ECC System] -->|"SAP Readiness Check for\nUsage and Data Profiling"| B[Analysis Data]
     B -->|"Upload to"| C[Manage Analysis Files]
     C -->|"Create"| D[Digital Blueprint]
