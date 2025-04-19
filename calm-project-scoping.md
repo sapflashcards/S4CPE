@@ -1,32 +1,35 @@
 ```mermaid
 flowchart TD
-    A[Discover Phase] --> B[Executive Sponsor]
-    B --> C[Complete Digital Discovery Assessment]
-    C --> D[Business Process Selection]
+    A[Project Type?] -->|New Implementation| B[Scope Required]
+    A -->|System Conversion| C[Skip Scoping]
     
-    D --> E{Implementation Type}
+    B -->|Choose Method| D{Scoping Method}
     
-    E -->|New Implementation| F[Partner Project Manager]
-    F --> G1[Cloud ALM Scoping]
+    D -->|Manual| E[Select Best Practices Package]
+    E -->|Choose| E1[SAP S/4HANA Cloud Private Edition]
+    E -->|Choose| E2[Enterprise Management Layer]
     
-    G1 -->|Option 1| H1[Manual Selection]
-    G1 -->|Option 2| H2[Import DDA Excel]
+    E1 -->|For| F1[Standard Companies]
+    E2 -->|For| F2[Larger Companies with Intercompany Processes]
     
-    H1 --> I[Select Same Business Processes]
-    H2 --> I
+    F1 --> G[Manual Process Selection]
+    F2 --> G
     
-    E -->|System Conversion| J[SAP Signavio Process Manager]
-    J --> K[Analyze Existing Scope]
+    G -->|Step 1| H[Filter by Country/Region]
+    H -->|Step 2| I[Filter by Line of Business]
+    I -->|Step 3| J[Add Individual Processes]
+    J --> K[End Scoping]
     
-    I --> L[Explore Phase]
-    K --> L
+    D -->|Import Method| L[Export Excel from DDA]
+    L --> M[Import in Cloud ALM]
+    M --> K
     
-    L --> M[Fit-to-Standard Workshops]
-    M --> N[Final Scope Adjustments]
+    C -->|Use Instead| N[SAP Signavio Process Manager]
+    N -->|For| O[Analyzing Existing Scope]
+    O -->|Plus| P[Documentation Tool]
     
-    style B fill:#0F9D58,stroke:#82b366
+    style B fill:#5733FF,stroke:#6c8ebf
     style C fill:#0F9D58,stroke:#82b366
-    style F fill:#5733FF,stroke:#6c8ebf
-    style M fill:#FF5733,stroke:#d79b00
-    style N fill:#FF5733,stroke:#d79b00
+    style K fill:#FF5733,stroke:#d79b00
+    style N fill:#5733FF,stroke:#9673a6
 ```
