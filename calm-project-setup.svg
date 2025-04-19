@@ -41,7 +41,7 @@
   <!-- Step 6 -->
   <rect x="350" y="80" width="200" height="80" rx="10" fill="#5b87dd" />
   <text x="450" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">6. Create System Group</text>
-  <text x="450" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Group dev, quality & prod systems</text>
+  <text x="450" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Group dev, quality and prod systems</text>
   
   <!-- Step 7 -->
   <rect x="350" y="200" width="200" height="80" rx="10" fill="#7292e1" />
@@ -82,7 +82,7 @@
   <text x="700" y="205" font-family="Arial, sans-serif" font-size="14" dominant-baseline="middle">Scoping (New Implementations)</text>
   
   <rect x="670" y="220" width="20" height="20" fill="#7292e1" />
-  <text x="700" y="235" font-family="Arial, sans-serif" font-size="14" dominant-baseline="middle">System & Deployment Setup</text>
+  <text x="700" y="235" font-family="Arial, sans-serif" font-size="14" dominant-baseline="middle">System and Deployment Setup</text>
   
   <rect x="670" y="250" width="20" height="20" fill="#4caf50" />
   <text x="700" y="265" font-family="Arial, sans-serif" font-size="14" dominant-baseline="middle">Completion</text>
@@ -95,7 +95,7 @@
   <text x="685" y="400" font-family="Arial, sans-serif" font-size="14" dominant-baseline="middle">Partner Project Manager needs access first</text>
   
   <circle cx="670" cy="430" r="5" fill="#e53935" />
-  <text x="685" y="430" font-family="Arial, sans-serif" font-size="14" dominant-baseline="middle">Start with go-live date & work backwards</text>
+  <text x="685" y="430" font-family="Arial, sans-serif" font-size="14" dominant-baseline="middle">Start with go-live date and work backwards</text>
   
   <circle cx="670" cy="460" r="5" fill="#e53935" />
   <text x="685" y="460" font-family="Arial, sans-serif" font-size="14" dominant-baseline="middle">Fit-to-Standard workshops need most time</text>
