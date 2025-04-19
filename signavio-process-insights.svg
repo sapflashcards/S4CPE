@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">SAP Signavio Process Insights Editions Comparison</text>
+  
+  <!-- Dividing line -->
+  <line x1="400" y1="70" x2="400" y2="370" stroke="#dddddd" stroke-width="2"/>
+  
+  <!-- Headers -->
+  <text x="200" y="90" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#4472c4">Discovery Edition</text>
+  <text x="600" y="90" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold" fill="#70ad47">Full Edition</text>
+  
+  <!-- Boxes -->
+  <!-- Discovery Edition Features -->
+  <rect x="60" y="120" width="280" height="60" rx="5" ry="5" fill="#dae3f3" stroke="#4472c4" stroke-width="1"/>
+  <text x="200" y="150" font-family="Arial" font-size="16" text-anchor="middle">One-time data load</text>
+  <text x="200" y="170" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Analysis of current state only</text>
+  
+  <rect x="60" y="190" width="280" height="60" rx="5" ry="5" fill="#dae3f3" stroke="#4472c4" stroke-width="1"/>
+  <text x="200" y="220" font-family="Arial" font-size="16" text-anchor="middle">Expires after 6 months</text>
+  <text x="200" y="240" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Time-limited access</text>
+  
+  <rect x="60" y="260" width="280" height="60" rx="5" ry="5" fill="#dae3f3" stroke="#4472c4" stroke-width="1"/>
+  <text x="200" y="290" font-family="Arial" font-size="16" text-anchor="middle">Basic functionality</text>
+  <text x="200" y="310" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Process analysis tools</text>
+  
+  <!-- Full Edition Features -->
+  <rect x="460" y="120" width="280" height="60" rx="5" ry="5" fill="#e2efd9" stroke="#70ad47" stroke-width="1"/>
+  <text x="600" y="150" font-family="Arial" font-size="16" text-anchor="middle">Continuous monitoring</text>
+  <text x="600" y="170" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Updated daily</text>
+  
+  <rect x="460" y="190" width="280" height="60" rx="5" ry="5" fill="#e2efd9" stroke="#70ad47" stroke-width="1"/>
+  <text x="600" y="220" font-family="Arial" font-size="16" text-anchor="middle">No expiration</text>
+  <text x="600" y="240" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Ongoing access and updates</text>
+  
+  <rect x="460" y="260" width="280" height="60" rx="5" ry="5" fill="#e2efd9" stroke="#70ad47" stroke-width="1"/>
+  <text x="600" y="290" font-family="Arial" font-size="16" text-anchor="middle">Extended functionality</text>
+  <text x="600" y="310" font-family="Arial" font-size="14" text-anchor="middle" fill="#555">Wider range of tools and options</text>
+  
+  <!-- Note at bottom -->
+  <text x="400" y="360" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">Note: Discovery Edition included in RISE with SAP package for S/4HANA Cloud Private Edition</text>
+</svg>
