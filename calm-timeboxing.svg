@@ -1,0 +1,43 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="50" y="100" width="700" height="80" fill="#f0f0f0" stroke="#ccc" />
+  
+  <!-- Phase Sections -->
+  <rect x="50" y="100" width="175" height="80" fill="#ffe6cc" stroke="#d79b00" />
+  <rect x="225" y="100" width="175" height="80" fill="#d5e8d4" stroke="#82b366" />
+  <rect x="400" y="100" width="175" height="80" fill="#dae8fc" stroke="#6c8ebf" />
+  <rect x="575" y="100" width="175" height="80" fill="#e1d5e7" stroke="#9673a6" />
+  
+  <!-- Phase Labels -->
+  <text x="137.5" y="140" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Prepare</text>
+  <text x="137.5" y="160" text-anchor="middle" font-family="Arial" font-size="12">Project Setup</text>
+  
+  <text x="312.5" y="140" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Explore</text>
+  <text x="312.5" y="160" text-anchor="middle" font-family="Arial" font-size="12">Fit-to-Standard Workshops</text>
+  
+  <text x="487.5" y="140" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Realize</text>
+  <text x="487.5" y="160" text-anchor="middle" font-family="Arial" font-size="12">Configuration</text>
+  
+  <text x="662.5" y="140" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Deploy</text>
+  <text x="662.5" y="160" text-anchor="middle" font-family="Arial" font-size="12">Go-Live</text>
+  
+  <!-- Timeline Arrows -->
+  <line x1="50" y1="200" x2="750" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Key Note -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">SAP Activate Roadmap Timeline</text>
+  <text x="400" y="75" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">Work backwards from Go-Live date</text>
+  
+  <!-- Timeline Labels -->
+  <text x="50" y="220" text-anchor="middle" font-family="Arial" font-size="12">Start</text>
+  <text x="750" y="220" text-anchor="middle" font-family="Arial" font-size="12">Go-Live</text>
+  
+  <!-- Note about Longest Phase -->
+  <text x="312.5" y="250" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Typically the longest phase</text>
+  <line x1="312.5" y1="180" x2="312.5" y2="245" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+</svg>
