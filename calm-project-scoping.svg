@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#0066b2">SAP Cloud ALM Scoping Process</text>
+  <text x="500" y="70" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#555">For New Implementations</text>
+  
+  <!-- Process Flow Diagram -->
+  <!-- Start -->
+  <circle cx="150" cy="130" r="30" fill="#0066b2" />
+  <text x="150" y="135" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Start</text>
+  
+  <!-- Decision Diamond 1 -->
+  <polygon points="150,190 190,230 150,270 110,230" fill="#ff9800" stroke="#e65100" stroke-width="2" />
+  <text x="150" y="235" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">New Implementation?</text>
+  
+  <!-- Yes Path -->
+  <path d="M190 230 L240 230" stroke="#0066b2" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="215" y="220" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">Yes</text>
+  
+  <!-- No Path -->
+  <path d="M110 230 L60 230 L60 400 L100 400" stroke="#0066b2" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="85" y="220" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">No</text>
+  
+  <!-- System Conversion Box -->
+  <rect x="100" y="370" width="200" height="60" rx="10" fill="#8bc34a" />
+  <text x="200" y="395" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">System Conversion</text>
+  <text x="200" y="415" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Use SAP Signavio</text>
+  
+  <!-- Digital Discovery Assessment -->
+  <rect x="240" y="200" width="200" height="60" rx="10" fill="#29b6f6" />
+  <text x="340" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Digital Discovery</text>
+  <text x="340" y="245" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Assessment (DDA)</text>
+  
+  <!-- Decision Diamond 2 -->
+  <polygon points="340,290 380,330 340,370 300,330" fill="#ff9800" stroke="#e65100" stroke-width="2" />
+  <text x="340" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Manual or Import?</text>
+  
+  <!-- Path to Decision 2 -->
+  <path d="M340 260 L340 290" stroke="#0066b2" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Manual Path -->
+  <path d="M300 330 L250 330 L250 400" stroke="#0066b2" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="275" y="320" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">Manual</text>
+  
+  <!-- Import Path -->
+  <path d="M380 330 L430 330 L430 400" stroke="#0066b2" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <text x="405" y="320" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">Import</text>
+  
+  <!-- Manual Steps -->
+  <rect x="150" y="400" width="200" height="180" rx="10" fill="#bbdefb" stroke="#1976d2" stroke-width="2" />
+  <text x="250" y="425" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1976d2">Manual Scoping Steps</text>
+  
+  <text x="160" y="455" font-family="Arial, sans-serif" font-size="14" fill="#333">1. Select SAP Best Practices package</text>
+  <text x="160" y="480" font-family="Arial, sans-serif" font-size="14" fill="#333">2. Filter by local versions</text>
+  <text x="160" y="505" font-family="Arial, sans-serif" font-size="14" fill="#333">3. Filter by line of business</text>
+  <text x="160" y="530" font-family="Arial, sans-serif" font-size="14" fill="#333">4. Use business process ID to search</text>
+  <text x="160" y="555" font-family="Arial, sans-serif" font-size="14" fill="#333">5. Add processes to scope</text>
+  
+  <!-- Import Steps -->
+  <rect x="370" y="400" width="200" height="180" rx="10" fill="#bbdefb" stroke="#1976d2" stroke-width="2" />
+  <text x="470" y="425" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1976d2">Import Scoping Steps</text>
+  
+  <text x="380" y="455" font-family="Arial, sans-serif" font-size="14" fill="#333">1. Access customer's DDA</text>
+  <text x="380" y="480" font-family="Arial, sans-serif" font-size="14" fill="#333">2. Navigate to Supply Chain of Selling app</text>
+  <text x="380" y="505" font-family="Arial, sans-serif" font-size="14" fill="#333">3. Export Excel file from DDA</text>
+  <text x="380" y="530" font-family="Arial, sans-serif" font-size="14" fill="#333">4. Import to SAP Cloud ALM</text>
+  <text x="380" y="555" font-family="Arial, sans-serif" font-size="14" fill="#333">5. Validate scope</text>
+  
+  <!-- Convergence -->
+  <path d="M250 580 L250 620 L340 620" stroke="#0066b2" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M430 580 L430 620 L400 620" stroke="#0066b2" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- System Conversion Path to End -->
+  <path d="M300 400 L650 400" stroke="#0066b2" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,5" />
+  
+  <!-- End Scoping -->
+  <rect x="340" y="600" width="200" height="60" rx="10" fill="#4caf50" />
+  <text x="440" y="635" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">End Scoping</text>
+  <text x="440" y="655" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Continue Project Setup</text>
+  
+  <!-- Path to End -->
+  <path d="M540 630 L650 630" stroke="#0066b2" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- End -->
+  <circle cx="680" cy="630" r="30" fill="#0066b2" />
+  <text x="680" y="635" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">End</text>
+  
+  <!-- Key Information Box -->
+  <rect x="650" y="120" width="300" height="200" rx="10" fill="white" stroke="#dddddd" stroke-width="2" />
+  <text x="800" y="150" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0066b2">Key Information</text>
+  
+  <text x="670" y="180" font-family="Arial, sans-serif" font-size="14" fill="#333">• DDA is completed by executives in</text>
+  <text x="680" y="200" font-family="Arial, sans-serif" font-size="14" fill="#333">the Discover phase</text>
+  
+  <text x="670" y="230" font-family="Arial, sans-serif" font-size="14" fill="#333">• Enterprise Management Layer (EML)</text>
+  <text x="680" y="250" font-family="Arial, sans-serif" font-size="14" fill="#333">is better for larger companies</text>
+  
+  <text x="670" y="280" font-family="Arial, sans-serif" font-size="14" fill="#333">• Scope will likely change after</text>
+  <text x="680" y="300" font-family="Arial, sans-serif" font-size="14" fill="#333">Fit-to-Standard workshops</text>
+  
+  <!-- Notes on System Conversion -->
+  <rect x="650" y="340" width="300" height="160" rx="10" fill="#f0f4c3" stroke="#afb42b" stroke-width="2" />
+  <text x="800" y="370" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#827717">System Conversion</text>
+  
+  <text x="670" y="400" font-family="Arial, sans-serif" font-size="14" fill="#333">• No scoping in Cloud ALM required</text>
+  <text x="670" y="425" font-family="Arial, sans-serif" font-size="14" fill="#333">• Use SAP Signavio Process Manager</text>
+  <text x="670" y="450" font-family="Arial, sans-serif" font-size="14" fill="#333">• Analyze existing scope in Signavio</text>
+  <text x="670" y="475" font-family="Arial, sans-serif" font-size="14" fill="#333">• Included in RISE with SAP bundle</text>
+  
+  <!-- Define marker for arrowhead -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0066b2" />
+    </marker>
+  </defs>
+</svg>
