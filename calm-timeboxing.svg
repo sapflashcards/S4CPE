@@ -1,43 +1,65 @@
-<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect x="50" y="100" width="700" height="80" fill="#f0f0f0" stroke="#ccc" />
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">SAP Cloud ALM Project Timeboxes</text>
   
-  <!-- Phase Sections -->
-  <rect x="50" y="100" width="175" height="80" fill="#ffe6cc" stroke="#d79b00" />
-  <rect x="225" y="100" width="175" height="80" fill="#d5e8d4" stroke="#82b366" />
-  <rect x="400" y="100" width="175" height="80" fill="#dae8fc" stroke="#6c8ebf" />
-  <rect x="575" y="100" width="175" height="80" fill="#e1d5e7" stroke="#9673a6" />
+  <!-- Timeline container -->
+  <rect x="50" y="70" width="700" height="230" fill="#f9f9f9" stroke="#ddd" stroke-width="1" rx="5" />
   
-  <!-- Phase Labels -->
-  <text x="137.5" y="140" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Prepare</text>
-  <text x="137.5" y="160" text-anchor="middle" font-family="Arial" font-size="12">Project Setup</text>
+  <!-- Timeline labels -->
+  <text x="400" y="90" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Project Timeline (Work backwards from Go-Live)</text>
   
-  <text x="312.5" y="140" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Explore</text>
-  <text x="312.5" y="160" text-anchor="middle" font-family="Arial" font-size="12">Fit-to-Standard Workshops</text>
+  <!-- Phase boxes -->
+  <rect x="100" y="110" width="150" height="120" fill="#ffe6cc" stroke="#d79b00" stroke-width="2" rx="5" />
+  <rect x="260" y="110" width="220" height="120" fill="#d5e8d4" stroke="#82b366" stroke-width="2" rx="5" />
+  <rect x="490" y="110" width="150" height="120" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2" rx="5" />
+  <rect x="650" y="110" width="80" height="120" fill="#e1d5e7" stroke="#9673a6" stroke-width="2" rx="5" />
   
-  <text x="487.5" y="140" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Realize</text>
-  <text x="487.5" y="160" text-anchor="middle" font-family="Arial" font-size="12">Configuration</text>
+  <!-- Phase titles -->
+  <text x="175" y="130" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Prepare</text>
+  <text x="370" y="130" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Explore</text>
+  <text x="565" y="130" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Realize</text>
+  <text x="690" y="130" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Deploy</text>
   
-  <text x="662.5" y="140" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Deploy</text>
-  <text x="662.5" y="160" text-anchor="middle" font-family="Arial" font-size="12">Go-Live</text>
+  <!-- Phase details -->
+  <text x="175" y="150" font-family="Arial" font-size="12" text-anchor="middle">Project Setup</text>
+  <text x="175" y="170" font-family="Arial" font-size="12" text-anchor="middle">Team Organization</text>
+  <text x="175" y="190" font-family="Arial" font-size="12" text-anchor="middle">Initial Planning</text>
   
-  <!-- Timeline Arrows -->
-  <line x1="50" y1="200" x2="750" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
-    </marker>
-  </defs>
+  <text x="370" y="150" font-family="Arial" font-size="12" text-anchor="middle">Fit-to-Standard Workshops</text>
+  <text x="370" y="170" font-family="Arial" font-size="12" text-anchor="middle">Business Process Definition</text>
+  <text x="370" y="190" font-family="Arial" font-size="12" text-anchor="middle">Scope Confirmation</text>
+  <text x="370" y="210" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">Longest Phase</text>
   
-  <!-- Key Note -->
-  <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">SAP Activate Roadmap Timeline</text>
-  <text x="400" y="75" text-anchor="middle" font-family="Arial" font-size="14" font-style="italic">Work backwards from Go-Live date</text>
+  <text x="565" y="150" font-family="Arial" font-size="12" text-anchor="middle">Configuration</text>
+  <text x="565" y="170" font-family="Arial" font-size="12" text-anchor="middle">Integration</text>
+  <text x="565" y="190" font-family="Arial" font-size="12" text-anchor="middle">Testing</text>
   
-  <!-- Timeline Labels -->
-  <text x="50" y="220" text-anchor="middle" font-family="Arial" font-size="12">Start</text>
-  <text x="750" y="220" text-anchor="middle" font-family="Arial" font-size="12">Go-Live</text>
+  <text x="690" y="150" font-family="Arial" font-size="12" text-anchor="middle">Cutover</text>
+  <text x="690" y="170" font-family="Arial" font-size="12" text-anchor="middle">Go-Live</text>
+  <text x="690" y="190" font-family="Arial" font-size="12" text-anchor="middle">Support</text>
   
-  <!-- Note about Longest Phase -->
-  <text x="312.5" y="250" text-anchor="middle" font-family="Arial" font-size="12" font-style="italic">Typically the longest phase</text>
-  <line x1="312.5" y1="180" x2="312.5" y2="245" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+  <!-- Timeline -->
+  <line x1="50" y1="250" x2="750" y2="250" stroke="#666" stroke-width="2" />
+  
+  <!-- Timeline markers -->
+  <circle cx="100" cy="250" r="5" fill="#666" />
+  <text x="100" y="270" font-family="Arial" font-size="12" text-anchor="middle">Start</text>
+  
+  <circle cx="260" cy="250" r="5" fill="#666" />
+  <text x="260" y="270" font-family="Arial" font-size="12" text-anchor="middle">Prepare Complete</text>
+  
+  <circle cx="490" cy="250" r="5" fill="#666" />
+  <text x="490" y="270" font-family="Arial" font-size="12" text-anchor="middle">Explore Complete</text>
+  
+  <circle cx="650" cy="250" r="5" fill="#666" />
+  <text x="650" y="270" font-family="Arial" font-size="12" text-anchor="middle">Realize Complete</text>
+  
+  <circle cx="730" cy="250" r="5" fill="#666" />
+  <text x="730" y="270" font-family="Arial" font-size="12" text-anchor="middle">Go-Live</text>
+  
+  <!-- Key points -->
+  <text x="400" y="320" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Key Points for Timebox Planning:</text>
+  <text x="400" y="345" font-family="Arial" font-size="12" text-anchor="middle">• Start with planned Go-Live date and work backwards</text>
+  <text x="400" y="365" font-family="Arial" font-size="12" text-anchor="middle">• Allocate most time to Explore phase (Fit-to-Standard workshops)</text>
+  <text x="400" y="385" font-family="Arial" font-size="12" text-anchor="middle">• Timeboxes help track progress and remaining tasks in Overview app</text>
 </svg>
