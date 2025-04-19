@@ -21,6 +21,6 @@ flowchart TD
     L --> M[Assign Deployment Plan to Project]
     M --> N[Project Setup Complete]
     
-    style A fill:#d0e0ff
-    style N fill:#c9f7c9
+    style A fill:#5733FF
+    style N fill:#0F9D58
 ```
