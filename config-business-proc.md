@@ -11,7 +11,6 @@ flowchart TD
     end
 
 
-flowchart LR
     subgraph "SAP Best Practices Customization Approach"
         OrigProcess[Original SAP Best Practice Process] --> Copy[Make a Copy]
         Copy --> Customize[Customize Copy]
@@ -29,7 +28,6 @@ flowchart LR
     style Edit fill:#ffcdd2,stroke:#333,stroke-width:1px
     style NoUpgrades fill:#ffcdd2,stroke:#333,stroke-width:1px
 
-flowchart TD
     subgraph "System Conversion Testing Process"
         Convert[Convert Sandbox System] --> EnableFiori[Enable SAP Fiori Launchpad and Apps]
         EnableFiori --> Sprint1[Sprint 1: Test Current Processes]
@@ -54,7 +52,6 @@ flowchart TD
     style ConvertNext fill:#f9d5e5,stroke:#333,stroke-width:1px
     style RepeatTests fill:#e8f5e9,stroke:#333,stroke-width:1px
 
-flowchart TD
     subgraph "SAP Partner Solutions"
         PartnerSolutions[SAP Partner Solutions] --> Certified[SAP Certified Solutions]
         PartnerSolutions --> Qualified[SAP Qualified Partner-Packaged Solutions]
