@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold" fill="#2c3e50">SAP Partner Solutions Overview</text>
+  
+  <!-- Main Categories -->
+  <rect x="100" y="80" width="600" height="80" rx="5" ry="5" fill="#3498db" opacity="0.8"/>
+  <text x="400" y="120" font-family="Arial" font-size="20" text-anchor="middle" fill="white" font-weight="bold">SAP Partner Solutions</text>
+  <text x="400" y="145" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Software and services provided by SAP partners</text>
+  
+  <!-- Two Main Categories -->
+  <rect x="150" y="180" width="220" height="50" rx="5" ry="5" fill="#e74c3c"/>
+  <text x="260" y="210" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">SAP Certified Solutions</text>
+  
+  <rect x="430" y="180" width="220" height="50" rx="5" ry="5" fill="#2ecc71"/>
+  <text x="540" y="210" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Partner-Packaged Solutions</text>
+  
+  <!-- Certified Solutions Details -->
+  <rect x="130" y="250" width="260" height="300" rx="5" ry="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2"/>
+  
+  <rect x="150" y="270" width="220" height="40" rx="5" ry="5" fill="#e74c3c" opacity="0.7"/>
+  <text x="260" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="white">SAP Certified Solutions</text>
+  
+  <!-- Process -->
+  <text x="260" y="330" font-family="Arial" font-size="14" text-anchor="middle" fill="#2c3e50" font-weight="bold">Rigorous Certification Process</text>
+  
+  <rect x="150" y="350" width="220" height="40" rx="5" ry="5" fill="#f39c12" opacity="0.7"/>
+  <text x="260" y="375" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">Partner leverages SAP technologies</text>
+  
+  <rect x="150" y="400" width="220" height="40" rx="5" ry="5" fill="#f39c12" opacity="0.7"/>
+  <text x="260" y="425" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">SAP tests implementation & stability</text>
+  
+  <rect x="150" y="450" width="220" height="40" rx="5" ry="5" fill="#f39c12" opacity="0.7"/>
+  <text x="260" y="475" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">Solution is certified</text>
+  
+  <rect x="150" y="500" width="220" height="40" rx="5" ry="5" fill="#f39c12" opacity="0.7"/>
+  <text x="260" y="525" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">Listed in SAP Certified Solutions Directory</text>
+  
+  <!-- Partner Packaged Solutions Details -->
+  <rect x="410" y="250" width="260" height="300" rx="5" ry="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2"/>
+  
+  <rect x="430" y="270" width="220" height="40" rx="5" ry="5" fill="#2ecc71" opacity="0.7"/>
+  <text x="540" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Partner-Packaged Solutions</text>
+  
+  <!-- Components -->
+  <text x="540" y="330" font-family="Arial" font-size="14" text-anchor="middle" fill="#2c3e50" font-weight="bold">Solution Components</text>
+  
+  <rect x="430" y="350" width="220" height="40" rx="5" ry="5" fill="#9b59b6" opacity="0.7"/>
+  <text x="540" y="375" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Core SAP Software Foundation</text>
+  
+  <rect x="430" y="400" width="220" height="40" rx="5" ry="5" fill="#9b59b6" opacity="0.7"/>
+  <text x="540" y="425" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Partner Services</text>
+  
+  <rect x="430" y="450" width="220" height="40" rx="5" ry="5" fill="#9b59b6" opacity="0.7"/>
+  <text x="540" y="475" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Partner Add-ons (Optional)</text>
+  
+  <rect x="430" y="500" width="220" height="40" rx="5" ry="5" fill="#9b59b6" opacity="0.7"/>
+  <text x="540" y="525" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Detailed Documentation</text>
+</svg>
