@@ -10,14 +10,6 @@ flowchart TD
         C1 --> D2[Master Data Steps]
     end
 
-    style A fill:#f9d5e5,stroke:#333,stroke-width:2px
-    style B1 fill:#eeeeee,stroke:#333,stroke-width:1px
-    style B2 fill:#eeeeee,stroke:#333,stroke-width:1px
-    style B3 fill:#eeeeee,stroke:#333,stroke-width:1px
-    style C1 fill:#e3f2fd,stroke:#333,stroke-width:1px
-    style C2 fill:#e3f2fd,stroke:#333,stroke-width:1px
-    style D1 fill:#e8f5e9,stroke:#333,stroke-width:1px
-    style D2 fill:#e8f5e9,stroke:#333,stroke-width:1px
 
 flowchart LR
     subgraph "SAP Best Practices Customization Approach"
@@ -87,4 +79,12 @@ flowchart TD
     style PartnerAddons fill:#fff9c4,stroke:#333,stroke-width:1px
     style Documentation fill:#fff9c4,stroke:#333,stroke-width:1px
     style SolutionFinder fill:#e8f5e9,stroke:#333,stroke-width:1px
+    style A fill:#f9d5e5,stroke:#333,stroke-width:2px
+    style B1 fill:#eeeeee,stroke:#333,stroke-width:1px
+    style B2 fill:#eeeeee,stroke:#333,stroke-width:1px
+    style B3 fill:#eeeeee,stroke:#333,stroke-width:1px
+    style C1 fill:#e3f2fd,stroke:#333,stroke-width:1px
+    style C2 fill:#e3f2fd,stroke:#333,stroke-width:1px
+    style D1 fill:#e8f5e9,stroke:#333,stroke-width:1px
+    style D2 fill:#e8f5e9,stroke:#333,stroke-width:1px
 ```
