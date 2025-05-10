@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f7fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">System Options for Fit-to-Standard Workshops</text>
+  
+  <!-- System Options Section -->
+  <rect x="50" y="70" width="700" height="500" rx="10" ry="10" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" />
+  
+  <!-- System 1 -->
+  <rect x="100" y="100" width="600" height="130" rx="8" ry="8" fill="#3498db" stroke="#2980b9" stroke-width="2" opacity="0.8" />
+  <text x="400" y="125" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">SAP S/4HANA Fully-Activated Appliance</text>
+  <text x="400" y="155" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Best choice for most customers</text>
+  <text x="400" y="185" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Allows demonstration of SAP Best Practice business processes with SAP Fiori</text>
+  <text x="400" y="210" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Used for both new implementations and system conversions</text>
+  
+  <!-- System 2 -->
+  <rect x="100" y="250" width="600" height="130" rx="8" ry="8" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" opacity="0.8" />
+  <text x="400" y="275" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">SAP S/4HANA Cloud Private Edition Customer Evaluation System</text>
+  <text x="400" y="305" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Better for larger customers</text>
+  <text x="400" y="335" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Delivered by SAP Enterprise Cloud Services (ECS) team</text>
+  <text x="400" y="360" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Higher cost but allows configuration copying between system tenants</text>
+  
+  <!-- System 3 -->
+  <rect x="100" y="400" width="600" height="150" rx="8" ry="8" fill="#e74c3c" stroke="#c0392b" stroke-width="2" opacity="0.8" />
+  <text x="400" y="425" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Converted Sandbox System</text>
+  <text x="400" y="455" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Takes longer to prepare</text>
+  <text x="400" y="485" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Copy of customer's productive system converted in sandbox</text>
+  <text x="400" y="510" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Can take a month+ to complete initial conversion</text>
+  <text x="400" y="535" font-family="Arial" font-size="14" text-anchor="middle" fill="white">SAP Best Practices content cannot be easily deployed</text>
+</svg>
