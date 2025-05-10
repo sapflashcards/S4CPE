@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f7fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">Fit-to-Standard Analysis Process Overview</text>
+  
+  <!-- Process Flow Box -->
+  <rect x="50" y="70" width="700" height="200" rx="10" ry="10" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" />
+  
+  <!-- Process Flow Title -->
+  <text x="400" y="95" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">Implementation Process Flow</text>
+  
+  <!-- Process Flow -->
+  <rect x="100" y="120" width="120" height="60" rx="5" ry="5" fill="#3498db" stroke="#2980b9" stroke-width="2" />
+  <text x="160" y="155" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Preparation</text>
+  
+  <rect x="280" y="120" width="120" height="60" rx="5" ry="5" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" />
+  <text x="340" y="155" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Fit-to-Standard Workshops</text>
+  
+  <rect x="460" y="120" width="120" height="60" rx="5" ry="5" fill="#2ecc71" stroke="#27ae60" stroke-width="2" />
+  <text x="520" y="155" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Design Workshops</text>
+  
+  <rect x="280" y="190" width="300" height="50" rx="5" ry="5" fill="#e74c3c" stroke="#c0392b" stroke-width="2" />
+  <text x="430" y="220" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Release Planning and Configuration Sprint</text>
+  
+  <!-- Arrows -->
+  <line x1="220" y1="150" x2="280" y2="150" stroke="#7f8c8d" stroke-width="2" />
+  <polygon points="275,145 285,150 275,155" fill="#7f8c8d" />
+  
+  <line x1="400" y1="150" x2="460" y2="150" stroke="#7f8c8d" stroke-width="2" />
+  <polygon points="455,145 465,150 455,155" fill="#7f8c8d" />
+  
+  <line x1="520" y1="180" x2="520" y2="190" stroke="#7f8c8d" stroke-width="2" />
+  <polygon points="515,185 520,195 525,185" fill="#7f8c8d" />
+  
+  <line x1="340" y1="180" x2="340" y2="190" stroke="#7f8c8d" stroke-width="2" />
+  <polygon points="335,185 340,195 345,185" fill="#7f8c8d" />
+  
+  <!-- Implementation Types Section -->
+  <rect x="50" y="300" width="340" height="270" rx="10" ry="10" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" />
+  <rect x="410" y="300" width="340" height="270" rx="10" ry="10" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" />
+  
+  <!-- Section Titles -->
+  <text x="220" y="330" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">New Implementation</text>
+  <text x="580" y="330" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">System Conversion</text>
+  
+  <!-- New Implementation Focus -->
+  <rect x="70" y="350" width="300" height="60" rx="5" ry="5" fill="#f1c40f" stroke="#f39c12" stroke-width="2" opacity="0.8" />
+  <text x="220" y="375" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#34495e">Focus:</text>
+  <text x="220" y="395" font-family="Arial" font-size="12" text-anchor="middle" fill="#34495e">Evaluating predefined solution against customer's requirements</text>
+  
+  <!-- System Conversion Focus -->
+  <rect x="430" y="350" width="300" height="60" rx="5" ry="5" fill="#f1c40f" stroke="#f39c12" stroke-width="2" opacity="0.8" />
+  <text x="580" y="375" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#34495e">Focus:</text>
+  <text x="580" y="395" font-family="Arial" font-size="12" text-anchor="middle" fill="#34495e">Evaluating processes that cannot be converted</text>
+  
+  <!-- New Implementation Tasks -->
+  <rect x="70" y="430" width="300" height="120" rx="5" ry="5" fill="#3498db" stroke="#2980b9" stroke-width="2" opacity="0.6" />
+  <text x="220" y="450" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#34495e">Key Tasks:</text>
+  <text x="220" y="475" font-family="Arial" font-size="12" text-anchor="middle" fill="#34495e">• Download/review SAP Best Practices</text>
+  <text x="220" y="495" font-family="Arial" font-size="12" text-anchor="middle" fill="#34495e">• Demonstrate SAP Best Practices</text>
+  <text x="220" y="515" font-family="Arial" font-size="12" text-anchor="middle" fill="#34495e">• Guide towards standard processes</text>
+  <text x="220" y="535" font-family="Arial" font-size="12" text-anchor="middle" fill="#34495e">• Document customization requirements</text>
+  
+  <!-- System Conversion Tasks -->
+  <rect x="430" y="430" width="300" height="120" rx="5" ry="5" fill="#3498db" stroke="#2980b9" stroke-width="2" opacity="0.6" />
+  <text x="580" y="450" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#34495e">Key Tasks:</text>
+  <text x="580" y="475" font-family="Arial" font-size="12" text-anchor="middle" fill="#34495e">• Analyze S/4HANA Simplification Items</text>
+  <text x="580" y="495" font-family="Arial" font-size="12" text-anchor="middle" fill="#34495e">• Demonstrate designed fit-to-standard system</text>
+  <text x="580" y="515" font-family="Arial" font-size="12" text-anchor="middle" fill="#34495e">• Review new innovations</text>
+  <text x="580" y="535" font-family="Arial" font-size="12" text-anchor="middle" fill="#34495e">• Document requirements for Simplification Items</text>
+</svg>
