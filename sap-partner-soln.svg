@@ -30,7 +30,7 @@
   <text x="260" y="375" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">Partner leverages SAP technologies</text>
   
   <rect x="150" y="400" width="220" height="40" rx="5" ry="5" fill="#f39c12" opacity="0.7"/>
-  <text x="260" y="425" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">SAP tests implementation & stability</text>
+  <text x="260" y="425" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">SAP tests implementation and stability</text>
   
   <rect x="150" y="450" width="220" height="40" rx="5" ry="5" fill="#f39c12" opacity="0.7"/>
   <text x="260" y="475" font-family="Arial" font-size="12" text-anchor="middle" fill="#2c3e50">Solution is certified</text>
