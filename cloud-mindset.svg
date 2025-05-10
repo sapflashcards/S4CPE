@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f7f7f7"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="30" text-anchor="middle" font-weight="bold" fill="#0064d9">The Cloud Mindset</text>
+  <text x="400" y="85" font-family="Arial" font-size="20" text-anchor="middle" fill="#555">Minimizing Customizations in SAP S/4HANA Cloud</text>
+  
+  <!-- Cloud Icon -->
+  <path d="M400 120 C320 120, 280 180, 320 220 C280 240, 280 300, 320 320 C300 360, 320 400, 360 400 L440 400 C480 400, 500 360, 480 320 C520 300, 520 240, 480 220 C520 180, 480 120, 400 120" fill="#0064d9" opacity="0.2" stroke="#0064d9" stroke-width="2"/>
+  
+  <!-- Left Column -->
+  <rect x="100" y="180" width="250" height="320" rx="10" fill="white" stroke="#ddd" stroke-width="2"/>
+  <text x="225" y="210" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#d92b04">Standard Process</text>
+  
+  <circle cx="155" cy="250" r="15" fill="#4caf50"/>
+  <text x="185" y="255" font-family="Arial" font-size="16" fill="#555" dominant-baseline="middle">Easier Upgrades</text>
+  
+  <circle cx="155" cy="290" r="15" fill="#4caf50"/>
+  <text x="185" y="295" font-family="Arial" font-size="16" fill="#555" dominant-baseline="middle">Lower Maintenance</text>
+  
+  <circle cx="155" cy="330" r="15" fill="#4caf50"/>
+  <text x="185" y="335" font-family="Arial" font-size="16" fill="#555" dominant-baseline="middle">Pre-built Documentation</text>
+  
+  <circle cx="155" cy="370" r="15" fill="#4caf50"/>
+  <text x="185" y="375" font-family="Arial" font-size="16" fill="#555" dominant-baseline="middle">Best Practices Built-in</text>
+  
+  <circle cx="155" cy="410" r="15" fill="#4caf50"/>
+  <text x="185" y="415" font-family="Arial" font-size="16" fill="#555" dominant-baseline="middle">Faster Implementation</text>
+  
+  <circle cx="155" cy="450" r="15" fill="#4caf50"/>
+  <text x="185" y="455" font-family="Arial" font-size="16" fill="#555" dominant-baseline="middle">Reduced Total Cost</text>
+  
+  <!-- Right Column -->
+  <rect x="450" y="180" width="250" height="320" rx="10" fill="white" stroke="#ddd" stroke-width="2"/>
+  <text x="575" y="210" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold" fill="#d92b04">Customization Approach</text>
+  
+  <rect x="480" y="240" width="20" height="20" fill="#ff9800"/>
+  <text x="510" y="255" font-family="Arial" font-size="16" fill="#555" dominant-baseline="middle">1. Use in-app customization</text>
+  
+  <rect x="480" y="290" width="20" height="20" fill="#ff9800"/>
+  <text x="510" y="305" font-family="Arial" font-size="16" fill="#555" dominant-baseline="middle">2. Make lifecycle-stable changes</text>
+  
+  <rect x="480" y="340" width="20" height="20" fill="#ff9800"/>
+  <text x="510" y="355" font-family="Arial" font-size="16" fill="#555" dominant-baseline="middle">3. Use BTP for extensions</text>
+  
+  <rect x="480" y="390" width="20" height="20" fill="#ff9800"/>
+  <text x="510" y="405" font-family="Arial" font-size="16" fill="#555" dominant-baseline="middle">4. Avoid backend changes</text>
+  
+  <rect x="480" y="440" width="20" height="20" fill="#ff9800"/>
+  <text x="510" y="455" font-family="Arial" font-size="16" fill="#555" dominant-baseline="middle">5. Document all changes in ALM</text>
+  
+  <!-- Bottom Text -->
+  <rect x="100" y="520" width="600" height="60" rx="5" fill="#e3f2fd"/>
+  <text x="400" y="550" font-family="Arial" font-size="16" text-anchor="middle" fill="#0d47a1" font-style="italic">"Only customize what's absolutely necessary to meet true business requirements, not 'nice to haves'"</text>
+  
+  <!-- RASD Tool Box -->
+  <rect x="550" y="120" width="200" height="40" rx="5" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+  <text x="650" y="145" font-family="Arial" font-size="14" text-anchor="middle" fill="#2e7d32">Release Assessment and Scope Dependency (RASD) Tool</text>
+</svg>
