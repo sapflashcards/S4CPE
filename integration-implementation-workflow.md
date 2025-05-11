@@ -12,7 +12,7 @@ flowchart TB
     F -->|Yes| G[Use Cloud Integration Automation Service]
     F -->|No| H[Manual Setup with Setup Instructions]
     
-    E -->|Not Available| I[Custom Development "Customer-Driven"]
+    E -->|Not Available| I[Custom Development Customer-Driven]
     
     I --> J[Search SAP Business Accelerator Hub]
     J --> K[Develop Custom Integration]
