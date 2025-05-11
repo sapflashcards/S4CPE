@@ -23,15 +23,5 @@ flowchart LR
     E --> E1[Simplify integration development]
     E --> E2[Crowd-based machine learning]
     E --> E3[Integration Advisor]
-    
-    classDef blue fill:#d4e6f1,stroke:#2980b9,stroke-width:1px;
-    classDef orange fill:#fef5e7,stroke:#e67e22,stroke-width:1px;
-    classDef green fill:#d5f5e3,stroke:#27ae60,stroke-width:1px;
-    classDef purple fill:#ebdef0,stroke:#8e44ad,stroke-width:1px;
-    
-    class A orange;
-    class B,B1,B2,B3 blue;
-    class C,C1,C2,C3 green;
-    class D,D1,D2,D3,D4,D5,D6 orange;
-    class E,E1,E2,E3 purple;
+
 ```
