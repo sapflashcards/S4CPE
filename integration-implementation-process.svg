@@ -60,7 +60,7 @@
   <line x1="600" y1="180" x2="600" y2="220" stroke="#8e44ad" stroke-width="1" stroke-dasharray="5,3" />
   
   <!-- Tools & Resources -->
-  <text x="400" y="320" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#0066b3">Tools & Resources</text>
+  <text x="400" y="320" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#0066b3">Tools and Resources</text>
   
   <rect x="75" y="340" width="150" height="30" rx="5" ry="5" fill="#fce4ec" stroke="#880e4f" stroke-width="1" />
   <text x="150" y="360" font-family="Arial" font-size="12" text-anchor="middle">SAP Cloud ALM</text>
