@@ -78,10 +78,10 @@
     SAP Cloud ALM
   </text>
   <text x="400" y="530" text-anchor="middle" font-family="Arial" font-size="12" fill="white">
-    Monitoring & Operations
+    Monitoring and Operations
   </text>
   <text x="400" y="550" text-anchor="middle" font-family="Arial" font-size="12" fill="white">
-    Requirements & Documentation
+    Requirements and Documentation
   </text>
   <path d="M400 480 L400 350" stroke="#5c9fd1" stroke-width="2" fill="none" />
 
