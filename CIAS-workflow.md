@@ -30,9 +30,9 @@ flowchart TB
     L --> I
     
     classDef start fill:#f8f9fa,stroke:#5d6d7e,stroke-width:2px;
-    classDef decision fill:#d4e6f1,stroke:#2980b9,stroke-width:2px;
-    classDef process fill:#d5f5e3,stroke:#27ae60,stroke-width:1px;
-    classDef manual fill:#fef5e7,stroke:#e67e22,stroke-width:1px;
+    classDef decision fill:#5733FF,stroke:#2980b9,stroke-width:2px;
+    classDef process fill:#0F9D58,stroke:#27ae60,stroke-width:1px;
+    classDef manual fill:#FF5733,stroke:#e67e22,stroke-width:1px;
     classDef wend fill:#ebdef0,stroke:#8e44ad,stroke-width:1px;
     
     class A start;
