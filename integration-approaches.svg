@@ -1,0 +1,171 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#0066cc">
+    SAP Integration Approaches and Usage
+  </text>
+  
+  <!-- Integration Scenarios Box -->
+  <rect x="50" y="80" width="700" height="120" rx="10" fill="#e6f2ff" stroke="#0066cc" stroke-width="2" />
+  <text x="400" y="110" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#0066cc">
+    Integration Scenarios
+  </text>
+  
+  <!-- SAP-to-SAP -->
+  <rect x="80" y="130" width="160" height="50" rx="5" fill="#0066cc" />
+  <text x="160" y="155" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
+    SAP-to-SAP
+  </text>
+  <text x="160" y="170" text-anchor="middle" font-family="Arial" font-size="10" fill="white">
+    (e.g., SuccessFactors to S/4HANA)
+  </text>
+  
+  <!-- Application-to-Application -->
+  <rect x="320" y="130" width="160" height="50" rx="5" fill="#5c9fd1" />
+  <text x="400" y="155" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
+    Application-to-Application
+  </text>
+  <text x="400" y="170" text-anchor="middle" font-family="Arial" font-size="10" fill="white">
+    (A2A)
+  </text>
+  
+  <!-- Business-to-Business -->
+  <rect x="560" y="130" width="160" height="50" rx="5" fill="#89b6d5" />
+  <text x="640" y="155" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
+    Business-to-Business
+  </text>
+  <text x="640" y="170" text-anchor="middle" font-family="Arial" font-size="10" fill="white">
+    (B2B) & Business-to-Government (B2G)
+  </text>
+  
+  <!-- Integration Approaches Box -->
+  <rect x="50" y="220" width="700" height="320" rx="10" fill="#e6f2ff" stroke="#0066cc" stroke-width="2" />
+  <text x="400" y="250" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#0066cc">
+    Integration Approaches
+  </text>
+  
+  <!-- Out-of-Box Column -->
+  <rect x="80" y="270" width="200" height="250" rx="5" fill="white" stroke="#0066cc" stroke-width="1" />
+  <text x="180" y="290" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">
+    Out-of-Box Integration
+  </text>
+  <line x1="80" y1="300" x2="280" y2="300" stroke="#0066cc" stroke-width="1" />
+  
+  <!-- Box 1 -->
+  <rect x="90" y="310" width="180" height="60" rx="5" fill="#e1edfa" />
+  <text x="180" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">
+    SAP Signavio Process Navigator
+  </text>
+  <text x="180" y="350" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    Integration content in processes
+  </text>
+  <text x="180" y="365" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    with "integration" in title
+  </text>
+  
+  <!-- Box 2 -->
+  <rect x="90" y="380" width="180" height="60" rx="5" fill="#e1edfa" />
+  <text x="180" y="400" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">
+    Cloud Integration Automation Service
+  </text>
+  <text x="180" y="420" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    Guided setup with automated,
+  </text>
+  <text x="180" y="435" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    semi-automated & manual tasks
+  </text>
+  
+  <!-- Box 3 -->
+  <rect x="90" y="450" width="180" height="60" rx="5" fill="#e1edfa" />
+  <text x="180" y="470" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">
+    SAP Help Portal
+  </text>
+  <text x="180" y="490" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    Integration content documentation
+  </text>
+  
+  <!-- Custom Column -->
+  <rect x="300" y="270" width="200" height="250" rx="5" fill="white" stroke="#0066cc" stroke-width="1" />
+  <text x="400" y="290" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">
+    Customer-Driven Integration
+  </text>
+  <line x1="300" y1="300" x2="500" y2="300" stroke="#0066cc" stroke-width="1" />
+  
+  <!-- Box 1 -->
+  <rect x="310" y="310" width="180" height="60" rx="5" fill="#e1edfa" />
+  <text x="400" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">
+    SAP Business Accelerator Hub
+  </text>
+  <text x="400" y="350" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    APIs, integration resources, partner
+  </text>
+  <text x="400" y="365" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    ecosystem content
+  </text>
+  
+  <!-- Box 2 -->
+  <rect x="310" y="380" width="180" height="60" rx="5" fill="#e1edfa" />
+  <text x="400" y="400" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">
+    Integration Suite Capabilities
+  </text>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    Cloud Integration, API Management,
+  </text>
+  <text x="400" y="435" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    Integration Advisor, Open Connectors
+  </text>
+  
+  <!-- Box 3 -->
+  <rect x="310" y="450" width="180" height="60" rx="5" fill="#e1edfa" />
+  <text x="400" y="470" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">
+    Supporting Services
+  </text>
+  <text x="400" y="490" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    Event Mesh, Connectivity Service
+  </text>
+  
+  <!-- Monitoring Column -->
+  <rect x="520" y="270" width="200" height="250" rx="5" fill="white" stroke="#0066cc" stroke-width="1" />
+  <text x="620" y="290" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0066cc">
+    Monitoring & Operations
+  </text>
+  <line x1="520" y1="300" x2="720" y2="300" stroke="#0066cc" stroke-width="1" />
+  
+  <!-- Box 1 -->
+  <rect x="530" y="310" width="180" height="60" rx="5" fill="#e1edfa" />
+  <text x="620" y="330" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">
+    Business Process Monitoring
+  </text>
+  <text x="620" y="350" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    End-to-end process health
+  </text>
+  
+  <!-- Box 2 -->
+  <rect x="530" y="380" width="180" height="60" rx="5" fill="#e1edfa" />
+  <text x="620" y="400" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">
+    Integration & Exception Monitoring
+  </text>
+  <text x="620" y="420" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    Track integration performance
+  </text>
+  <text x="620" y="435" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    and errors
+  </text>
+  
+  <!-- Box 3 -->
+  <rect x="530" y="450" width="180" height="60" rx="5" fill="#e1edfa" />
+  <text x="620" y="470" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#333">
+    External API Management
+  </text>
+  <text x="620" y="490" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">
+    Connect and monitor external systems
+  </text>
+  
+  <!-- Bottom Integration Use Case -->
+  <rect x="50" y="560" width="700" height="30" rx="5" fill="#0066cc" />
+  <text x="400" y="580" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">
+    SAP Cloud ALM provides comprehensive integration lifecycle management
+  </text>
+</svg>
