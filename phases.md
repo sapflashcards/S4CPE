@@ -45,6 +45,6 @@ gantt
     Implementation Testing (Formal)      : itform, 50, 55
     Integration Testing                  : integ, 50, 55
     End-to-end Business Process Testing  : e2e, 50, 55
-    User Acceptance Testing              : crit, uat, 50, 60
+    User Acceptance Testing              : crit, uat, 55, 60
     Regression Testing                   : regress, 70, 80
 ```
