@@ -21,7 +21,7 @@ gantt
     
     section Systems
     SAP S/4HANA Fully-Activated Appliance (CAL; 30 day trial) : cal, 10, 40
-    SAP S/4HANA Cloud Private Edition Customer Evaluation System (30 days to build; 6 month subscription) : eval, 10, 40
+    SAP S/4HANA Cloud Private Edition Customer Evaluation System (30 days to build; 6 month subscription) : active, eval, 10, 40
     Converted Sandbox System : sandbox, 10, 40
     
     section Fit-to-Standard Activities
