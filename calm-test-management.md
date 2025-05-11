@@ -35,10 +35,10 @@ flowchart TB
     ResolveFix --> Retest["Re-Test"]
     Retest --> End
     
-    classDef prepSteps fill:#e3f2fd,stroke:#2196f3,stroke-width:1px
-    classDef planSteps fill:#fff3e0,stroke:#ff9800,stroke-width:1px
-    classDef execSteps fill:#e8f5e9,stroke:#4caf50,stroke-width:1px
-    classDef endpoints fill:#f5f5f5,stroke:#9e9e9e,stroke-width:1px
+    classDef prepSteps fill:#5733FF,stroke:#2196f3,stroke-width:1px
+    classDef planSteps fill:#0F9D58,stroke:#ff9800,stroke-width:1px
+    classDef execSteps fill:#FF5733,stroke:#4caf50,stroke-width:1px
+    classDef endpoints fill:#800080,stroke:#9e9e9e,stroke-width:1px
     
     class Start,End endpoints
     class CreateTest,Type,Title,Scope,Activities,StatusPrep prepSteps
