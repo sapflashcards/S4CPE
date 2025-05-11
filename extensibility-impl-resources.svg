@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#0066cc">
+    SAP S/4HANA Cloud Implementation Resources
+  </text>
+  
+  <!-- Main Container -->
+  <rect x="50" y="70" width="700" height="380" rx="10" fill="#ffffff" stroke="#dddddd" stroke-width="2" />
+  
+  <!-- Tools & Resources Section -->
+  <rect x="80" y="100" width="300" height="320" rx="8" fill="#e6f2ff" stroke="#0066cc" stroke-width="2" />
+  <text x="230" y="130" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#0066cc">
+    Tools & Resources
+  </text>
+  
+  <!-- SAP Extensibility Explorer -->
+  <rect x="100" y="150" width="260" height="70" rx="5" fill="#ffffff" stroke="#0066cc" stroke-width="1" />
+  <text x="230" y="180" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#0066cc">
+    SAP Extensibility Explorer
+  </text>
+  <text x="230" y="200" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">
+    Sample scenarios, use cases, learning resources
+  </text>
+  
+  <!-- SAP Business Accelerator Hub -->
+  <rect x="100" y="240" width="260" height="70" rx="5" fill="#ffffff" stroke="#0066cc" stroke-width="1" />
+  <text x="230" y="270" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#0066cc">
+    SAP Business Accelerator Hub
+  </text>
+  <text x="230" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">
+    APIs, events, connectors, CDS views, workflows
+  </text>
+  
+  <!-- SAP Developer Center -->
+  <rect x="100" y="330" width="260" height="70" rx="5" fill="#ffffff" stroke="#0066cc" stroke-width="1" />
+  <text x="230" y="360" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#0066cc">
+    SAP Developer Center
+  </text>
+  <text x="230" y="380" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">
+    Developer-focused learning journeys & tutorials
+  </text>
+  
+  <!-- Implementation Process -->
+  <rect x="420" y="100" width="300" height="320" rx="8" fill="#f0f5e6" stroke="#669900" stroke-width="2" />
+  <text x="570" y="130" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#669900">
+    Implementation Process
+  </text>
+  
+  <!-- Discovery Phase -->
+  <rect x="440" y="150" width="260" height="50" rx="5" fill="#ffffff" stroke="#669900" stroke-width="1" />
+  <text x="570" y="180" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#669900">
+    1. Fit-to-Standard Workshops
+  </text>
+  
+  <!-- Assessment Phase -->
+  <rect x="440" y="210" width="260" height="50" rx="5" fill="#ffffff" stroke="#669900" stroke-width="1" />
+  <text x="570" y="240" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#669900">
+    2. Requirements Analysis
+  </text>
+  
+  <!-- Solution Design -->
+  <rect x="440" y="270" width="260" height="50" rx="5" fill="#ffffff" stroke="#669900" stroke-width="1" />
+  <text x="570" y="300" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#669900">
+    3. Extensibility Strategy Decision
+  </text>
+  
+  <!-- Implementation -->
+  <rect x="440" y="330" width="260" height="50" rx="5" fill="#ffffff" stroke="#669900" stroke-width="1" />
+  <text x="570" y="360" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#669900">
+    4. Development & Integration
+  </text>
+  
+  <!-- Connecting Lines -->
+  <path d="M380 210 C400 210, 400 210, 420 210" stroke="#999999" stroke-width="2" fill="none" />
+  <path d="M380 270 C400 270, 400 270, 420 270" stroke="#999999" stroke-width="2" fill="none" />
+  <path d="M380 330 C400 330, 400 330, 420 330" stroke="#999999" stroke-width="2" fill="none" />
+</svg>
