@@ -1,5 +1,5 @@
 ```mermaid
-graph TD
+graph LR
     A[SAP Fiori Launchpad] --- B[Extensibility Inventory App]
     A --- C[Custom Fields App]
     A --- D[Custom Logic App]
