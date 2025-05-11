@@ -24,6 +24,7 @@ gantt
     Converted Sandbox System : sandbox, 10, 40
     
     section Fit-to-Standard Activities
+    Digital Discovery Assessment         : dda, 0, 5
     Fit-to-Standard Workshop Preparation : ftsprep, 10, 20
     Fit-to-Standard System Preparation   : ftssys, 10, 20
     Workshop Execution                   : crit, wexec, 20, 27
@@ -45,6 +46,6 @@ gantt
     Implementation Testing (Formal)      : itform, 50, 55
     Integration Testing                  : integ, 50, 55
     End-to-end Business Process Testing  : e2e, 50, 55
-    User Acceptance Testing              : crit, uat, 55, 60
+    User Acceptance Testing              : crit, uat, 50, 60
     Regression Testing                   : regress, 70, 80
 ```
