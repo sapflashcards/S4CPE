@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">Tricentis Test Automation for SAP</text>
+  
+  <!-- Main section box -->
+  <rect x="50" y="70" width="700" height="400" rx="10" fill="#ffffff" stroke="#673ab7" stroke-width="2" />
+  
+  <!-- Top Section: Integration Overview -->
+  <rect x="75" y="90" width="650" height="120" rx="5" fill="#ede7f6" stroke="#673ab7" stroke-width="2" />
+  <text x="400" y="115" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#4a148c">SAP and Tricentis Integration</text>
+  
+  <!-- Diagram showing integration -->
+  <rect x="100" y="130" width="200" height="60" rx="5" fill="#d1c4e9" stroke="#673ab7" stroke-width="2" />
+  <text x="200" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="#4a148c">SAP Cloud ALM</text>
+  
+  <rect x="500" y="130" width="200" height="60" rx="5" fill="#d1c4e9" stroke="#673ab7" stroke-width="2" />
+  <text x="600" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="#4a148c">Tricentis Test Automation</text>
+  
+  <path d="M300,160 L500,160" stroke="#673ab7" stroke-width="2" stroke-dasharray="10,5" />
+  <polygon points="500,160 493,157 493,163" fill="#673ab7" />
+  <polygon points="300,160 307,157 307,163" fill="#673ab7" />
+  <text x="400" y="150" text-anchor="middle" font-family="Arial" font-size="12" fill="#4a148c">Integration</text>
+  
+  <!-- Middle Section: Tricentis Capabilities -->
+  <rect x="75" y="230" width="310" height="220" rx="5" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2" />
+  <text x="230" y="255" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#1a237e">Tricentis Capabilities</text>
+  
+  <g>
+    <circle cx="110" cy="285" r="10" fill="#3f51b5" />
+    <text x="110" y="290" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">1</text>
+    <text x="240" y="290" text-anchor="start" font-family="Arial" font-size="14" fill="#1a237e">Test automation of all SAP UIs</text>
+  </g>
+  
+  <g>
+    <circle cx="110" cy="325" r="10" fill="#3f51b5" />
+    <text x="110" y="330" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">2</text>
+    <text x="240" y="330" text-anchor="start" font-family="Arial" font-size="14" fill="#1a237e">Test automation of APIs</text>
+  </g>
+  
+  <g>
+    <circle cx="110" cy="365" r="10" fill="#3f51b5" />
+    <text x="110" y="370" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">3</text>
+    <text x="240" y="370" text-anchor="start" font-family="Arial" font-size="14" fill="#1a237e">Test Automation Content</text>
+  </g>
+  
+  <g>
+    <circle cx="110" cy="405" r="10" fill="#3f51b5" />
+    <text x="110" y="410" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">4</text>
+    <text x="240" y="410" text-anchor="start" font-family="Arial" font-size="14" fill="#1a237e">Test recorder for business users</text>
+  </g>
+  
+  <!-- Right Section: Integration Benefits -->
+  <rect x="415" y="230" width="310" height="220" rx="5" fill="#e0f7fa" stroke="#00bcd4" stroke-width="2" />
+  <text x="570" y="255" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#006064">Integration Benefits</text>
+  
+  <g>
+    <rect x="435" y="275" width="270" height="40" rx="3" fill="#b2ebf2" stroke="#00bcd4" stroke-width="1" />
+    <text x="570" y="300" text-anchor="middle" font-family="Arial" font-size="14" fill="#006064">Test planning in SAP Cloud ALM</text>
+  </g>
+  
+  <g>
+    <rect x="435" y="325" width="270" height="40" rx="3" fill="#b2ebf2" stroke="#00bcd4" stroke-width="1" />
+    <text x="570" y="350" text-anchor="middle" font-family="Arial" font-size="14" fill="#006064">Test automation with Tricentis</text>
+  </g>
+  
+  <g>
+    <rect x="435" y="375" width="270" height="40" rx="3" fill="#b2ebf2" stroke="#00bcd4" stroke-width="1" />
+    <text x="570" y="400" text-anchor="middle" font-family="Arial" font-size="14" fill="#006064">SAP's ALM as overall orchestrator</text>
+  </g>
+</svg>
