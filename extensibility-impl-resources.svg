@@ -40,7 +40,7 @@
     SAP Developer Center
   </text>
   <text x="230" y="380" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">
-    Developer-focused learning journeys & tutorials
+    Developer-focused learning journeys and tutorials
   </text>
   
   <!-- Implementation Process -->
@@ -70,7 +70,7 @@
   <!-- Implementation -->
   <rect x="440" y="330" width="260" height="50" rx="5" fill="#ffffff" stroke="#669900" stroke-width="1" />
   <text x="570" y="360" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#669900">
-    4. Development & Integration
+    4. Development and Integration
   </text>
   
   <!-- Connecting Lines -->
