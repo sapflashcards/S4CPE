@@ -14,7 +14,7 @@ gantt
     
     section Teams
     Executive Sponsors (Customer & Partner / SAP) : es, 0, 80
-    Embedded Launch Onboarding Expert : eloe, 10, 20
+    Embedded Launch Onboarding Expert : active, eloe, 10, 20
     System Admin & Extended Project Team (Customer) : sysadmin, 10, 80
     Implementation Project Team (Partner / SAP) : impl, 10, 80
     Consumers (Customer) : consumers, 60, 80
