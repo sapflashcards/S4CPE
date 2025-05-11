@@ -18,6 +18,11 @@ gantt
     Implementation Project Team (Partner / SAP) : impl, 10, 80
     Consumers (Customer) : consumers, 60, 80
     
+    section Systems
+    SAP S/4HANA Fully-Activated Appliance (CAL; 30 day trial) : cal, 10, 40
+    SAP S/4HANA Cloud Private Edition Customer Evaluation System (30 days to build; 6 month subscription) : eval, 10, 40
+    Converted Sandbox System : sandbox, 10, 40
+    
     section Fit-to-Standard Activities
     Fit-to-Standard Workshop Preparation : ftsprep, 10, 20
     Fit-to-Standard System Preparation   : ftssys, 10, 20
