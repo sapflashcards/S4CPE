@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP S/4HANA Cloud Private Edition Overview</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.3.0/mermaid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        :root {
+            --sap-blue: #0070f2;
+            --sap-dark-blue: #003b71;
+            --sap-light-gray: #f5f5f5;
+            --sap-medium-gray: #d4d4d4;
+            --sap-dark-gray: #333333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--sap-dark-gray);
+            margin: 0;
+            padding: 0;
+            background-color: #fcfcfc;
+        }
+        
+        header {
+            background-color: var(--sap-blue);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav {
+            background-color: var(--sap-dark-blue);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h1, h2, h3, h4 {
+            color: var(--sap-dark-blue);
+            margin-top: 0;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--sap-medium-gray);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .mermaid {
+            background-color: var(--sap-light-gray);
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin: 1.5rem 0;
+            overflow: auto;
+        }
+        
+        .diagram-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .tab-container {
+            margin: 2rem 0;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid var(--sap-medium-gray);
+        }
+        
+        .tab {
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--sap-dark-gray);
+        }
+        
+        .tab.active {
+            color: var(--sap-blue);
+            border-bottom: 3px solid var(--sap-blue);
+            margin-bottom: -2px;
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 1.5rem 0;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--sap-medium-gray);
+        }
+        
+        th {
+            background-color: var(--sap-light-gray);
+            font-weight: 600;
+            color: var(--sap-dark-blue);
+        }
+        
+        tr:hover {
+            background-color: var(--sap-light-gray);
+        }
+        
+        footer {
+            background-color: var(--sap-dark-blue);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .note {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .important {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .info {
+            background-color: #e3f2fd;
+            border-left: 4px solid var(--sap-blue);
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .success {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SAP S/4HANA Cloud Private Edition</h1>
+            <p>Comprehensive Guide & Architecture Overview</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#components">Key Components</a></li>
+            <li><a href="#operations">Operations</a></li>
+            <li><a href="#migration">Migration</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="introduction">
+            <h2>Introduction to S/4HANA Cloud Private Edition</h2>
+            <p>SAP S/4HANA Cloud Private Edition (S/4CPE) is SAP's cloud-based ERP solution designed for large enterprises that require both the innovation and flexibility of cloud with the customization capabilities of on-premise solutions. It represents SAP's strategic move towards cloud-first enterprise solutions while accommodating customers with complex requirements.</p>
+            
+            <div class="info">
+                <h3>S/4HANA Cloud Private Edition vs. Public Cloud Edition</h3>
+                <p>While both are cloud-based, S/4HANA Cloud Private Edition offers:</p>
+                <ul>
+                    <li>Greater customization capabilities</li>
+                    <li>Support for more complex business scenarios</li>
+                    <li>Higher degree of control over systems and update cycles</li>
+                    <li>Ability to run in customer-selected hyperscaler environments</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h3>Key Benefits</h3>
+                <ul>
+                    <li><strong>Flexibility:</strong> Deploy in various cloud environments (AWS, Azure, GCP, etc.)</li>
+                    <li><strong>Customization:</strong> Maintain custom developments and extensions</li>
+                    <li><strong>Innovation:</strong> Access to SAP's latest technologies and quarterly innovations</li>
+                    <li><strong>Scalability:</strong> Scale resources according to business demands</li>
+                    <li><strong>Cost-effectiveness:</strong> Subscription-based pricing model with reduced infrastructure maintenance costs</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="architecture">
+            <h2>Architecture Overview</h2>
+            
+            <div class="diagram-container">
+                <h3>High-Level Architecture</h3>
+                <div class="mermaid">
+                    graph TB
+                        subgraph "User Access Layer"
+                            UI[SAP Fiori UI]
+                            Web[Web Browser]
+                            Mobile[Mobile Apps]
+                        end
+                        
+                        subgraph "Application Layer"
+                            S4[S/4HANA Core]
+                            Fiori[Fiori Front-End Server]
+                            BTP[SAP Business Technology Platform]
+                            Extensions[Custom Extensions]
+                        end
+                        
+                        subgraph "Database Layer"
+                            HANA[SAP HANA Database]
+                        end
+                        
+                        subgraph "Infrastructure Layer"
+                            Cloud[Hyperscaler Cloud Platform]
+                            subgraph "Cloud Resources"
+                                Compute[Compute]
+                                Storage[Storage]
+                                Network[Network]
+                            end
+                        end
+                        
+                        UI --> Fiori
+                        Web --> Fiori
+                        Mobile --> Fiori
+                        Fiori --> S4
+                        S4 --> HANA
+                        S4 --> BTP
+                        BTP --> Extensions
+                        HANA --> Cloud
+                        Cloud --> Compute
+                        Cloud --> Storage
+                        Cloud --> Network
+                </div>
+            </div>
+            
+            <div class="diagram-container">
+                <h3>Landscape Components</h3>
+                <div class="mermaid">
+                    graph LR
+                        subgraph "S/4HANA Cloud Private Edition Landscape"
+                            DEV[Development System]
+                            QAS[Quality Assurance System]
+                            PRD[Production System]
+                            
+                            DEV --> QAS
+                            QAS --> PRD
+                        end
+                        
+                        subgraph "Supporting Systems"
+                            TMS[Transport Management]
+                            SAL[Solution Lifecycle Management]
+                            MON[Monitoring & Operations]
+                        end
+                        
+                        TMS --- DEV
+                        TMS --- QAS
+                        TMS --- PRD
+                        SAL --- DEV
+                        SAL --- QAS
+                        SAL --- PRD
+                        MON --- DEV
+                        MON --- QAS
+                        MON --- PRD
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Multi-Tenant Architecture</h3>
+                <p>S/4HANA Cloud Private Edition can be deployed in various configurations:</p>
+                <ul>
+                    <li><strong>Single-tenant:</strong> Dedicated environment for a single customer</li>
+                    <li><strong>Multi-tenant:</strong> Shared infrastructure with isolation between customer instances</li>
+                </ul>
+                <p>The multi-tenant architecture allows SAP to provide economies of scale while maintaining security and separation between customer data and processes.</p>
+            </div>
+        </section>
+        
+        <section id="components">
+            <h2>Key Components</h2>
+            
+            <div class="tab-container">
+                <div class="tabs">
+                    <button class="tab active" onclick="openTab(event, 'core-components')">Core Components</button>
+                    <button class="tab" onclick="openTab(event, 'technology-components')">Technology Components</button>
+                    <button class="tab" onclick="openTab(event, 'operations-components')">Operations Components</button>
+                </div>
+                
+                <div id="core-components" class="tab-content active">
+                    <div class="grid">
+                        <div class="card">
+                            <h3>SAP S/4HANA Core</h3>
+                            <p>The central ERP application component that processes business transactions and houses the business logic for enterprise processes.</p>
+                            <ul>
+                                <li>Finance</li>
+                                <li>Logistics</li>
+                                <li>Manufacturing</li>
+                                <li>Supply Chain</li>
+                                <li>Human Resources (integration)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>SAP HANA Database</h3>
+                            <p>In-memory database platform designed for high-speed data processing and analytics.</p>
+                            <ul>
+                                <li>Column-oriented storage</li>
+                                <li>In-memory processing</li>
+                                <li>Advanced compression</li>
+                                <li>Real-time analytics</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>SAP Fiori</h3>
+                            <p>Modern user experience designed for all devices with role-based applications.</p>
+                            <ul>
+                                <li>Responsive design</li>
+                                <li>Role-based apps</li>
+                                <li>Intuitive interfaces</li>
+                                <li>Consistent experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="technology-components" class="tab-content">
+                    <div class="grid">
+                        <div class="card">
+                            <h3>SAP Business Technology Platform (BTP)</h3>
+                            <p>Cloud platform for extending applications and developing new applications.</p>
+                            <ul>
+                                <li>Cloud Foundry environment</li>
+                                <li>ABAP environment</li>
+                                <li>Kyma runtime</li>
+                                <li>Integration Suite</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>SAP NetWeaver</h3>
+                            <p>Technology foundation for many SAP applications.</p>
+                            <ul>
+                                <li>ABAP application server</li>
+                                <li>Java application server</li>
+                                <li>Integration capabilities</li>
+                                <li>Development tools</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>Integration Technologies</h3>
+                            <p>Components for connecting S/4HANA with other systems.</p>
+                            <ul>
+                                <li>APIs and OData services</li>
+                                <li>SAP Cloud Integration</li>
+                                <li>SAP API Management</li>
+                                <li>SAP Event Mesh</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="operations-components" class="tab-content">
+                    <div class="grid">
+                        <div class="card">
+                            <h3>SAP Solution Manager</h3>
+                            <p>Centralized application management and administration.</p>
+                            <ul>
+                                <li>System monitoring</li>
+                                <li>Application lifecycle management</li>
+                                <li>Change management</li>
+                                <li>Business process monitoring</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>SAP Cloud ALM</h3>
+                            <p>Cloud-based application lifecycle management solution.</p>
+                            <ul>
+                                <li>Implementation management</li>
+                                <li>Process monitoring</li>
+                                <li>Change management</li>
+                                <li>Operations orchestration</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>SAP Focused Run</h3>
+                            <p>Enhanced monitoring and operations solution for complex landscapes.</p>
+                            <ul>
+                                <li>System monitoring</li>
+                                <li>Root cause analysis</li>
+                                <li>End-user experience monitoring</li>
+                                <li>IT operations analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="diagram-container">
+                <h3>Component Integration</h3>
+                <div class="mermaid">
+                    flowchart TB
+                        subgraph "Core Systems"
+                            S4[S/4HANA Core] --> HANA[HANA DB]
+                            Fiori[SAP Fiori UX] --> S4
+                        end
+                        
+                        subgraph "Extension & Integration"
+                            BTP[SAP BTP]
+                            API[API Management]
+                            CPI[Cloud Integration]
+                            ABAP[ABAP Environment]
+                        end
+                        
+                        subgraph "Operations & Lifecycle"
+                            ALM[SAP Cloud ALM]
+                            FR[SAP Focused Run]
+                            SM[Solution Manager]
+                        end
+                        
+                        S4 <--> BTP
+                        S4 <--> API
+                        BTP <--> ABAP
+                        BTP <--> CPI
+                        
+                        ALM --> S4
+                        FR --> S4
+                        SM --> S4
+                </div>
+            </div>
+        </section>
+        
+        <section id="operations">
+            <h2>Operations and Maintenance</h2>
+            
+            <div class="card">
+                <h3>Responsibilities Matrix</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Area</th>
+                            <th>SAP</th>
+                            <th>Customer</th>
+                            <th>Hyperscaler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Infrastructure</td>
+                            <td>Sizing, Architecture</td>
+                            <td>Requirements</td>
+                            <td>Provisioning, Maintenance</td>
+                        </tr>
+                        <tr>
+                            <td>Database</td>
+                            <td>Installation, Updates, Monitoring</td>
+                            <td>Configuration requirements</td>
+                            <td>Infrastructure support</td>
+                        </tr>
+                        <tr>
+                            <td>Application</td>
+                            <td>Installation, Updates, Support</td>
+                            <td>Configuration, Custom code</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Security</td>
+                            <td>Platform security, Patches</td>
+                            <td>Access management, Custom security</td>
+                            <td>Infrastructure security</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="diagram-container">
+                <h3>Maintenance Process</h3>
+                <div class="mermaid">
+                    graph LR
+                        subgraph "SAP Maintenance Process"
+                            U[Upgrade Planning] --> I[Impact Analysis]
+                            I --> T[Test Planning]
+                            T --> E[Execute Upgrade]
+                            E --> V[Validation]
+                            V --> P[Post-Upgrade Activities]
+                        end
+                        
+                        subgraph "Timeframes"
+                            Q[Quarterly Feature Releases]
+                            S[Security Patches - Monthly]
+                            C[Critical Fixes - As Needed]
+                        end
+                        
+                        Q --> U
+                        S --> E
+                        C --> E
+                </div>
+            </div>
+            
+            <div class="info">
+                <h3>Update and Upgrade Strategy</h3>
+                <p>S/4HANA Cloud Private Edition follows a structured release and update strategy:</p>
+                <ul>
+                    <li><strong>Feature updates:</strong> Quarterly releases with new functionality</li>
+                    <li><strong>Support packages:</strong> Regular maintenance updates</li>
+                    <li><strong>Security patches:</strong> Critical updates as needed</li>
+                </ul>
+                <p>Customers have more flexibility in when to adopt updates compared to the Public Cloud Edition, but must stay within defined maintenance windows.</p>
+            </div>
+        </section>
+        
+        <section id="migration">
+            <h2>Migration and Implementation</h2>
+            
+            <div class="diagram-container">
+                <h3>Migration Paths</h3>
+                <div class="mermaid">
+                    graph LR
+                        subgraph "Source Systems"
+                            ECC[SAP ECC]
+                            S4OP[S/4HANA On-Premise]
+                            NS[Non-SAP Systems]
+                        end
+                        
+                        subgraph "Approaches"
+                            Green[Greenfield]
+                            Brown[Brownfield]
+                            Sel[Selective Data Transition]
+                        end
+                        
+                        subgraph "Target"
+                            S4CPE[S/4HANA Cloud Private Edition]
+                        end
+                        
+                        ECC --> Green
+                        ECC --> Brown
+                        ECC --> Sel
+                        S4OP --> Green
+                        S4OP --> Brown
+                        NS --> Green
+                        
+                        Green --> S4CPE
+                        Brown --> S4CPE
+                        Sel --> S4CPE
+                </div>
+            </div>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>Greenfield Approach</h3>
+                    <p>New implementation with fresh start and process redesign.</p>
+                    <h4>Best for:</h4>
+                    <ul>
+                        <li>Companies seeking complete transformation</li>
+                        <li>Organizations with outdated processes</li>
+                        <li>Scenarios requiring significant business changes</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Brownfield Approach</h3>
+                    <p>System conversion maintaining history, configuration, and customizations.</p>
+                    <h4>Best for:</h4>
+                    <ul>
+                        <li>Organizations with significant customizations</li>
+                        <li>Companies requiring historical data preservation</li>
+                        <li>Scenarios with limited time for reimplementation</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Selective Data Transition</h3>
+                    <p>Hybrid approach with selective data migration and process redesign.</p>
+                    <h4>Best for:</h4>
+                    <ul>
+                        <li>Complex landscapes with multiple systems</li>
+                        <li>Organizations requiring partial process redesign</li>
+                        <li>Scenarios needing specific historical data</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="diagram-container">
+                <h3>Implementation Methodology</h3>
+                <div class="mermaid">
+                    graph LR
+                        PP[Prepare] --> E[Explore]
+                        E --> R[Realize]
+                        R --> D[Deploy]
+                        D --> RU[Run]
+                        
+                        subgraph "SAP Activate Methodology"
+                            PP
+                            E
+                            R
+                            D
+                            RU
+                        end
+                </div>
+            </div>
+            
+            <div class="important">
+                <h3>Key Success Factors</h3>
+                <ul>
+                    <li><strong>Clean core strategy:</strong> Minimize customizations to core</li>
+                    <li><strong>Extension strategy:</strong> Use side-by-side extensions on BTP</li>
+                    <li><strong>Data management:</strong> Clean and transform data before migration</li>
+                    <li><strong>Change management:</strong> Prepare organization for process changes</li>
+                    <li><strong>Testing strategy:</strong> Comprehensive testing plan for all scenarios</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="resources">
+            <h2>Resources and Best Practices</h2>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>Documentation</h3>
+                    <ul>
+                        <li>SAP Help Portal - S/4HANA Cloud Private Edition</li>
+                        <li>SAP Best Practices Explorer</li>
+                        <li>SAP Roadmap Viewer</li>
+                        <li>SAP Community Wiki</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>SAP Readiness Check</li>
+                        <li>SAP Business Scenario Recommendations</li>
+                        <li>SAP Custom Code Migration App</li>
+                        <li>SAP Transformation Navigator</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Community Resources</h3>
+                    <ul>
+                        <li>SAP Community Network</li>
+                        <li>SAP User Groups</li>
+                        <li>SAP TechEd Sessions</li>
+                        <li>SAP Blogs and Forums</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="success">
+                <h3>Best Practices</h3>
+                <ul>
+                    <li><strong>Start with business value:</strong> Focus on outcomes, not technology</li>
+                    <li><strong>Clean core approach:</strong> Minimize customizations in core S/4HANA</li>
+                    <li><strong>Extension strategy:</strong> Use SAP BTP for extensions</li>
+                    <li><strong>Organizational change management:</strong> Prepare users for new processes</li>
+                    <li><strong>Iterative approach:</strong> Implement in phases with clear milestones</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>SAP S/4HANA Cloud Private Edition Overview</p>
+            <p><small>Based on content from <a href="https://github.com/sapflashcards/S4CPE" style="color: white;">github.com/sapflashcards/S4CPE</a></small></p>
+        </div>
+    </footer>
+    
+    <script>
+        // Initialize Mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'neutral',
+            securityLevel: 'loose',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+        
+        // Tab functionality
+        function openTab(evt, tabName) {
+            var i, tabContent, tabLinks;
+            
+            // Hide all tab content
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+            
+            // Remove active class from tabs
+            tabLinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active");
+            }
+            
+            // Show current tab and add active class
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
