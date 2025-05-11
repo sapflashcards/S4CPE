@@ -34,5 +34,5 @@ gantt
     Design Documentation                 : crit, ddoc, 35, 37
     Review & Customer Sign-off           : crit, rsign, 37, 39
     Release Planning                     : rplan, 39, 40
-    Configuration Sprints                : csprint, 40, 60
+    Configuration Sprints                : crit, csprint, 40, 60
 ```
