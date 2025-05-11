@@ -35,4 +35,16 @@ gantt
     Review & Customer Sign-off           : crit, rsign, 37, 39
     Release Planning                     : rplan, 39, 40
     Configuration Sprints                : crit, csprint, 40, 60
+    
+    section Testing
+    Test Planning                        : tplan, 40, 45
+    Implementation Testing (Informal)    : itinf, 45, 50
+    Unit Testing                         : unit, 45, 50
+    String Testing                       : string, 45, 50
+    Authorizations                       : auth, 45, 50
+    Implementation Testing (Formal)      : itform, 50, 55
+    Integration Testing                  : integ, 50, 55
+    End-to-end Business Process Testing  : e2e, 50, 55
+    User Acceptance Testing              : crit, uat, 50, 60
+    Regression Testing                   : regress, 70, 80
 ```
