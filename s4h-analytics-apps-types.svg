@@ -1,0 +1,69 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#0a6ed1">SAP S/4HANA Cloud Analytics Application Types</text>
+  
+  <!-- Central element - "Manage KPIs and Reports" -->
+  <circle cx="400" cy="250" r="120" fill="#0a6ed1" opacity="0.2" stroke="#0a6ed1" stroke-width="2" />
+  <text x="400" y="250" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Manage KPIs</text>
+  <text x="400" y="275" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">and Reports</text>
+  
+  <!-- Application types -->
+  <g id="kpis">
+    <circle cx="200" cy="120" r="70" fill="#f0f8ff" stroke="#0a6ed1" stroke-width="2" />
+    <text x="200" y="120" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">KPIs</text>
+    <text x="200" y="145" font-family="Arial" font-size="12" text-anchor="middle">Performance</text>
+    <text x="200" y="160" font-family="Arial" font-size="12" text-anchor="middle">Indicators</text>
+  </g>
+  
+  <g id="reports">
+    <circle cx="600" cy="120" r="70" fill="#f0f8ff" stroke="#0a6ed1" stroke-width="2" />
+    <text x="600" y="110" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Reports</text>
+    <text x="600" y="130" font-family="Arial" font-size="11" text-anchor="middle">- Generic Drilldown</text>
+    <text x="600" y="145" font-family="Arial" font-size="11" text-anchor="middle">- Analytical List Page</text>
+    <text x="600" y="160" font-family="Arial" font-size="11" text-anchor="middle">- Data Analyzer</text>
+  </g>
+  
+  <g id="multidim">
+    <circle cx="150" cy="380" r="70" fill="#f0f8ff" stroke="#0a6ed1" stroke-width="2" />
+    <text x="150" y="370" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Multidimensional</text>
+    <text x="150" y="390" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Reports</text>
+    <text x="150" y="410" font-family="Arial" font-size="11" text-anchor="middle">(Web Dynpro apps)</text>
+  </g>
+  
+  <g id="booklets">
+    <circle cx="400" cy="450" r="70" fill="#f0f8ff" stroke="#0a6ed1" stroke-width="2" />
+    <text x="400" y="440" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Review</text>
+    <text x="400" y="460" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Booklets</text>
+    <text x="400" y="480" font-family="Arial" font-size="11" text-anchor="middle">(Modern UI5 theme)</text>
+  </g>
+  
+  <g id="stories">
+    <circle cx="650" cy="380" r="70" fill="#f0f8ff" stroke="#0a6ed1" stroke-width="2" />
+    <text x="650" y="370" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">SAC</text>
+    <text x="650" y="390" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Stories</text>
+    <text x="650" y="410" font-family="Arial" font-size="11" text-anchor="middle">(Visualizations)</text>
+  </g>
+  
+  <!-- Connection lines -->
+  <line x1="260" y1="155" x2="310" y2="190" stroke="#0a6ed1" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="540" y1="155" x2="490" y2="190" stroke="#0a6ed1" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="210" y1="330" x2="320" y2="270" stroke="#0a6ed1" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="400" y1="380" x2="400" y2="330" stroke="#0a6ed1" stroke-width="2" stroke-dasharray="5,3" />
+  <line x1="590" y1="330" x2="480" y2="270" stroke="#0a6ed1" stroke-width="2" stroke-dasharray="5,3" />
+  
+  <!-- Data sources -->
+  <rect x="100" y="520" width="600" height="60" rx="5" fill="#eaf4ff" stroke="#0a6ed1" stroke-width="2" />
+  <text x="400" y="550" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Data Sources: CDS Views and Analytical Queries</text>
+  
+  <path d="M400 520 L400 490" stroke="#0a6ed1" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0a6ed1" />
+    </marker>
+  </defs>
+</svg>
