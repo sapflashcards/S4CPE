@@ -33,11 +33,11 @@ flowchart TB
     classDef decision fill:#d4e6f1,stroke:#2980b9,stroke-width:2px;
     classDef process fill:#d5f5e3,stroke:#27ae60,stroke-width:1px;
     classDef manual fill:#fef5e7,stroke:#e67e22,stroke-width:1px;
-    classDef end fill:#ebdef0,stroke:#8e44ad,stroke-width:1px;
+    classDef wend fill:#ebdef0,stroke:#8e44ad,stroke-width:1px;
     
     class A start;
     class B decision;
     class C,C1,C2,E,F,G,H,F1,G1 process;
     class D,H1,J,K,L manual;
-    class I end;
+    class I wend;
 ```
