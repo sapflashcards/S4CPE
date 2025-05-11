@@ -1,0 +1,38 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#0a6ed1">SAP S/4HANA Cloud Analytics Architecture</text>
+  
+  <!-- Layers illustration -->
+  <rect x="120" y="100" width="560" height="100" rx="5" fill="#e2f0ff" stroke="#0a6ed1" stroke-width="2" />
+  <text x="400" y="150" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">SAP Fiori Analytical Applications (User Interface)</text>
+  
+  <rect x="120" y="220" width="560" height="100" rx="5" fill="#d1e7ff" stroke="#0a6ed1" stroke-width="2" />
+  <text x="400" y="255" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Virtual Data Model (VDM)</text>
+  <text x="400" y="285" font-family="Arial" font-size="16" text-anchor="middle">Core Data Services (CDS) Views</text>
+  
+  <rect x="120" y="340" width="560" height="100" rx="5" fill="#b8dcff" stroke="#0a6ed1" stroke-width="2" />
+  <text x="400" y="390" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">SAP HANA Database (Business Data)</text>
+  
+  <!-- Arrows connecting layers -->
+  <path d="M400 200 L400 220" stroke="#0a6ed1" stroke-width="3" marker-end="url(#arrowhead)" />
+  <path d="M400 320 L400 340" stroke="#0a6ed1" stroke-width="3" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0a6ed1" />
+    </marker>
+  </defs>
+  
+  <!-- Notes about the architecture -->
+  <rect x="120" y="460" width="560" height="120" rx="5" fill="#f0f8ff" stroke="#999" stroke-width="1" stroke-dasharray="5,5" />
+  <text x="140" y="490" font-family="Arial" font-size="14">
+    <tspan x="140" y="485">Key Insights:</tspan>
+    <tspan x="140" y="510">• CDS is the universal language that enables communication between layers</tspan>
+    <tspan x="140" y="535">• Embedded analytics means data and analytical apps are in the same stack</tspan>
+    <tspan x="140" y="560">• SAP Analytics Cloud powers analytical applications through live connection</tspan>
+  </text>
+</svg>
