@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">SAP Cloud ALM Test Management Workflow</text>
+  
+  <!-- Main process flow -->
+  <rect x="100" y="80" width="600" height="70" rx="5" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2" />
+  <text x="400" y="120" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#3f51b5">Test Management Process Flow</text>
+  
+  <!-- Workflow steps -->
+  <!-- Step 1 -->
+  <rect x="100" y="180" width="150" height="80" rx="5" fill="#c5cae9" stroke="#3f51b5" stroke-width="2" />
+  <text x="175" y="210" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#3f51b5">1. Test Preparation</text>
+  <text x="175" y="230" text-anchor="middle" font-family="Arial" font-size="12" fill="#3f51b5">Create Manual Test Cases</text>
+  <text x="175" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#3f51b5">Based on Solution Scope</text>
+  
+  <!-- Arrow 1-->
+  <path d="M250,220 L270,220" stroke="#3f51b5" stroke-width="2" />
+  <polygon points="270,220 265,217 265,223" fill="#3f51b5" />
+  
+  <!-- Step 2 -->
+  <rect x="270" y="180" width="150" height="80" rx="5" fill="#9fa8da" stroke="#3f51b5" stroke-width="2" />
+  <text x="345" y="210" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#3f51b5">2. Test Plan Creation</text>
+  <text x="345" y="230" text-anchor="middle" font-family="Arial" font-size="12" fill="#3f51b5">Group Test Cases</text>
+  <text x="345" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#3f51b5">Assign to Testers</text>
+  
+  <!-- Arrow 2 -->
+  <path d="M420,220 L440,220" stroke="#3f51b5" stroke-width="2" />
+  <polygon points="440,220 435,217 435,223" fill="#3f51b5" />
+  
+  <!-- Step 3 -->
+  <rect x="440" y="180" width="150" height="80" rx="5" fill="#7986cb" stroke="#3f51b5" stroke-width="2" />
+  <text x="515" y="210" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">3. Test Execution</text>
+  <text x="515" y="230" text-anchor="middle" font-family="Arial" font-size="12" fill="#ffffff">Run Tests</text>
+  <text x="515" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#ffffff">Document Results</text>
+  
+  <!-- Arrow 3 -->
+  <path d="M590,220 L610,220" stroke="#3f51b5" stroke-width="2" />
+  <polygon points="610,220 605,217 605,223" fill="#3f51b5" />
+  
+  <!-- Step 4 -->
+  <rect x="610" y="180" width="150" height="80" rx="5" fill="#5c6bc0" stroke="#3f51b5" stroke-width="2" />
+  <text x="685" y="210" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#ffffff">4. Defect Management</text>
+  <text x="685" y="230" text-anchor="middle" font-family="Arial" font-size="12" fill="#ffffff">Resolve Issues</text>
+  <text x="685" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#ffffff">Re-test Solutions</text>
+  
+  <!-- Test Preparation Details -->
+  <rect x="100" y="300" width="330" height="250" rx="10" fill="#ffffff" stroke="#3f51b5" stroke-width="2" />
+  <text x="265" y="325" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#3f51b5">Test Preparation Details</text>
+  
+  <rect x="120" y="340" width="290" height="195" rx="5" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+  
+  <text x="265" y="360" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#0d47a1">Creating a Test Case</text>
+  
+  <g>
+    <rect x="135" y="375" width="260" height="25" rx="3" fill="#bbdefb" stroke="#2196f3" stroke-width="1" />
+    <text x="145" y="392" text-anchor="start" font-family="Arial" font-size="12" fill="#0d47a1">1. Open Test Preparation App</text>
+  </g>
+  
+  <g>
+    <rect x="135" y="405" width="260" height="25" rx="3" fill="#bbdefb" stroke="#2196f3" stroke-width="1" />
+    <text x="145" y="422" text-anchor="start" font-family="Arial" font-size="12" fill="#0d47a1">2. Create New Test Case (Manual Type)</text>
+  </g>
+  
+  <g>
+    <rect x="135" y="435" width="260" height="25" rx="3" fill="#bbdefb" stroke="#2196f3" stroke-width="1" />
+    <text x="145" y="452" text-anchor="start" font-family="Arial" font-size="12" fill="#0d47a1">3. Select Business Process in Scope</text>
+  </g>
+  
+  <g>
+    <rect x="135" y="465" width="260" height="25" rx="3" fill="#bbdefb" stroke="#2196f3" stroke-width="1" />
+    <text x="145" y="482" text-anchor="start" font-family="Arial" font-size="12" fill="#0d47a1">4. Select In-Scope Test Procedures</text>
+  </g>
+  
+  <g>
+    <rect x="135" y="495" width="260" height="25" rx="3" fill="#bbdefb" stroke="#2196f3" stroke-width="1" />
+    <text x="145" y="512" text-anchor="start" font-family="Arial" font-size="12" fill="#0d47a1">5. Change Status to "Prepared"</text>
+  </g>
+  
+  <!-- Test Plan Details -->
+  <rect x="450" y="300" width="330" height="250" rx="10" fill="#ffffff" stroke="#3f51b5" stroke-width="2" />
+  <text x="615" y="325" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#3f51b5">Test Plan Details</text>
+  
+  <rect x="470" y="340" width="290" height="195" rx="5" fill="#fff3e0" stroke="#ff9800" stroke-width="2" />
+  
+  <text x="615" y="360" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e65100">Creating a Test Plan</text>
+  
+  <g>
+    <rect x="485" y="375" width="260" height="25" rx="3" fill="#ffe0b2" stroke="#ff9800" stroke-width="1" />
+    <text x="495" y="392" text-anchor="start" font-family="Arial" font-size="12" fill="#e65100">1. Navigate to Test Plan App</text>
+  </g>
+  
+  <g>
+    <rect x="485" y="405" width="260" height="25" rx="3" fill="#ffe0b2" stroke="#ff9800" stroke-width="1" />
+    <text x="495" y="422" text-anchor="start" font-family="Arial" font-size="12" fill="#e65100">2. Create New Test Plan</text>
+  </g>
+  
+  <g>
+    <rect x="485" y="435" width="260" height="25" rx="3" fill="#ffe0b2" stroke="#ff9800" stroke-width="1" />
+    <text x="495" y="452" text-anchor="start" font-family="Arial" font-size="12" fill="#e65100">3. Assign Test Cases to Plan</text>
+  </g>
+  
+  <g>
+    <rect x="485" y="465" width="260" height="25" rx="3" fill="#ffe0b2" stroke="#ff9800" stroke-width="1" />
+    <text x="495" y="482" text-anchor="start" font-family="Arial" font-size="12" fill="#e65100">4. Assign Person & Set Dates</text>
+  </g>
+  
+  <g>
+    <rect x="485" y="495" width="260" height="25" rx="3" fill="#ffe0b2" stroke="#ff9800" stroke-width="1" />
+    <text x="495" y="512" text-anchor="start" font-family="Arial" font-size="12" fill="#e65100">5. Change Status to "In Testing"</text>
+  </g>
+</svg>
