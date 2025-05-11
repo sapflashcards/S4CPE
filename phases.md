@@ -25,7 +25,7 @@ gantt
     Converted Sandbox System : sandbox, 10, 40
     
     section Fit-to-Standard Activities
-    Digital Discovery Assessment         : dda, 0, 5
+    Digital Discovery Assessment         : active, dda, 0, 5
     Fit-to-Standard Workshop Preparation : ftsprep, 10, 20
     Fit-to-Standard System Preparation   : ftssys, 10, 20
     Workshop Execution                   : crit, wexec, 20, 27
